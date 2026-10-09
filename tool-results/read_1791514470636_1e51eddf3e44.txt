@@ -1,0 +1,1080 @@
+     1→/**
+     2→ * ORAYA Maison — product catalog.
+     3→ * Prices stored in XOF (FCFA). Bilingual FR/EN copy.
+     4→ *
+     5→ * IMAGE NOTE: photos under /images/products/ are placeholders sourced for the
+     6→ * demo build — replace with professional ORAYA product photography before launch.
+     7→ */
+     8→import type { Product, CategorySlug, MaterialSlug } from "@/lib/types";
+     9→
+    10→export const CATEGORY_LIST: CategorySlug[] = [
+    11→  "colliers",
+    12→  "bagues",
+    13→  "pendentifs",
+    14→  "bracelets",
+    15→  "boucles-oreilles",
+    16→  "parures",
+    17→  "montres",
+    18→];
+    19→
+    20→export const MATERIAL_LIST: MaterialSlug[] = [
+    21→  "or-veritable",
+    22→  "plaque-or",
+    23→  "argent-925",
+    24→  "acier-inoxydable",
+    25→];
+    26→
+    27→const img = (slug: string, n = 1) => `/images/products/${slug}${n > 1 ? `-${n}` : ""}.jpg`;
+    28→
+    29→export const products: Product[] = [
+    30→  /* ---------------------------------- COLLIERS ---------------------------------- */
+    31→  {
+    32→    slug: "collier-luna",
+    33→    name: "Collier Luna",
+    34→    category: "colliers",
+    35→    materials: ["plaque-or"],
+    36→    priceXof: 24500,
+    37→    images: [img("collier-luna"), img("collier-luna", 2)],
+    38→    rating: 4.8,
+    39→    reviews: 126,
+    40→    isNew: true,
+    41→    short: {
+    42→      fr: "Chaîne fine dorée à l'or fin 18 carats, éclat discret du matin au soir.",
+    43→      en: "Fine 18k gold-plated chain, a discreet shine from morning to night.",
+    44→    },
+    45→    description: {
+    46→      fr: "Le Collier Luna est né pour être porté sans jamais le quitter : sa chaîne ultra-fine en plaqué or 18 carats épouse le cou et capte la lumière à chaque mouvement. Anti-ternissement, il résiste à l'eau et au climat tropical.",
+    47→      en: "The Luna necklace is made to be worn without ever taking it off: its ultra-fine 18k gold-plated chain hugs the neck and catches the light with every movement. Anti-tarnish, it resists water and tropical climates.",
+    48→    },
+    49→    details: {
+    50→      fr: [
+    51→        "Matière : plaqué or 18 carats sur laiton premium",
+    52→        "Design : chaîne forçat 1,2 mm, fermoir mousqueton renforcé",
+    53→        "Finition : poli miroir, garantie anti-ternissement 1 an",
+    54→      ],
+    55→      en: [
+    56→        "Material: 18k gold plated on premium brass",
+    57→        "Design: 1.2 mm cable chain, reinforced lobster clasp",
+    58→        "Finish: mirror polish, 1-year anti-tarnish warranty",
+    59→      ],
+    60→    },
+    61→    variants: { lengths: ["40 cm", "45 cm", "50 cm"], colors: ["or", "argent"] },
+    62→  },
+    63→  {
+    64→    slug: "collier-reine",
+    65→    name: "Collier Reine",
+    66→    category: "colliers",
+    67→    materials: ["or-veritable"],
+    68→    priceXof: 89000,
+    69→    images: [img("collier-reine"), img("collier-reine", 2)],
+    70→    rating: 4.9,
+    71→    reviews: 214,
+    72→    isBestseller: true,
+    73→    short: {
+    74→      fr: "Pièce maîtresse en or véritable 18 carats, poinçonnée et certifiée.",
+    75→      en: "A statement piece in certified 18k solid gold, hallmarked.",
+    76→    },
+    77→    description: {
+    78→      fr: "Le Collier Reine assume son rang : or véritable 18 carats, maillons sculptés et ce poids si particulier de l'or massif sur la peau. Livré avec son certificat de pureté dans l'écrin signature ORAYA.",
+    79→      en: "The Reine necklace owns its rank: genuine 18k gold, sculpted links and that unmistakable weight of solid gold on the skin. Delivered with its purity certificate in the signature ORAYA case.",
+    80→    },
+    81→    details: {
+    82→      fr: [
+    83→        "Matière : or jaune 18 carats (750‰), poinçon officiel",
+    84→        "Design : maillons serti zircone, fermoir de sécurité",
+    85→        "Finition : poli haute brillance, certificat de pureté inclus",
+    86→      ],
+    87→      en: [
+    88→        "Material: 18k yellow gold (750‰), official hallmark",
+    89→        "Design: zircon-set links, safety clasp",
+    90→        "Finish: high-polish, purity certificate included",
+    91→      ],
+    92→    },
+    93→    variants: { lengths: ["42 cm", "45 cm", "50 cm"] },
+    94→  },
+    95→  {
+    96→    slug: "collier-etoile-doree",
+    97→    name: "Collier Étoile Dorée",
+    98→    category: "colliers",
+    99→    materials: ["argent-925"],
+   100→    priceXof: 15000,
+   101→    images: [img("collier-etoile-doree"), img("collier-etoile-doree", 2)],
+   102→    rating: 4.6,
+   103→    reviews: 89,
+   104→    short: {
+   105→      fr: "Argent 925 rhodié, éclat scintillant — le bijou porte-bonheur.",
+   106→      en: "Rhodium-plated 925 silver, sparkling shine — the lucky charm.",
+   107→    },
+   108→    description: {
+   109→      fr: "Une chaîne d'argent 925 rhodié qui brille d'un éclat froid et lumineux : le Collier Étoile Dorée est parfait en superposition avec vos chaînes dorées.",
+   110→      en: "A rhodium-plated 925 silver chain shining with a cool, luminous glow: the Étoile Dorée necklace is perfect for layering with your gold chains.",
+   111→    },
+   112→    details: {
+   113→      fr: [
+   114→        "Matière : argent 925 rhodié anti-ternissement",
+   115→        "Design : chaîne gourmette fine",
+   116→        "Finition : rhodiage miroir, écrin ORAYA inclus",
+   117→      ],
+   118→      en: [
+   119→        "Material: anti-tarnish rhodium-plated 925 silver",
+   120→        "Design: fine curb chain",
+   121→        "Finish: mirror rhodium plating, ORAYA case included",
+   122→      ],
+   123→    },
+   124→    variants: { lengths: ["40 cm", "45 cm", "50 cm"] },
+   125→  },
+   126→  {
+   127→    slug: "collier-aurore",
+   128→    name: "Collier Aurore",
+   129→    category: "colliers",
+   130→    materials: ["plaque-or"],
+   131→    priceXof: 32000,
+   132→    compareAtXof: 39500,
+   133→    images: [img("collier-aurore"), img("collier-aurore", 2)],
+   134→    rating: 4.7,
+   135→    reviews: 74,
+   136→    short: {
+   137→      fr: "Maille serpente dorée — l'éclat de l'aube autour du cou.",
+   138→      en: "Gold snake chain — dawn's glow around your neck.",
+   139→    },
+   140→    description: {
+   141→      fr: "Le Collier Aurore joue la carte de la luminosité : sa maille serpente épouse les mouvements et capte chaque rayon. Une pièce spectaculaire qui reste légère.",
+   142→      en: "The Aurore necklace plays the luminosity card: its snake chain follows your movements and catches every ray. A spectacular piece that stays light.",
+   143→    },
+   144→    details: {
+   145→      fr: [
+   146→        "Matière : plaqué or 18 carats, 3 microns",
+   147→        "Design : maille serpente 3 mm",
+   148→        "Finition : poli miroir, chaînette de réglage 5 cm",
+   149→      ],
+   150→      en: [
+   151→        "Material: 18k gold plated, 3 microns",
+   152→        "Design: 3 mm snake chain",
+   153→        "Finish: mirror polish, 5 cm adjuster chain",
+   154→      ],
+   155→    },
+   156→    variants: { lengths: ["40 cm", "45 cm", "50 cm"], colors: ["or", "or-rose"] },
+   157→  },
+   158→  {
+   159→    slug: "collier-sika",
+   160→    name: "Collier Sika",
+   161→    category: "colliers",
+   162→    materials: ["acier-inoxydable"],
+   163→    priceXof: 9900,
+   164→    images: [img("collier-sika")],
+   165→    rating: 4.5,
+   166→    reviews: 58,
+   167→    short: {
+   168→      fr: "Acier inoxydable doré, indestructible et waterproof — le quotidien sans compromis.",
+   169→      en: "Gold stainless steel, unbreakable and waterproof — everyday, no compromise.",
+   170→    },
+   171→    description: {
+   172→      fr: "Sika veut dire richesse en akan : ce collier en acier inoxydable doré ne craint ni la douche, ni la mer, ni le sport. L'allié des journées bien remplies.",
+   173→      en: "Sika means wealth in Akan: this gold stainless steel necklace fears neither the shower, the sea, nor the gym. The ally of busy days.",
+   174→    },
+   175→    details: {
+   176→      fr: [
+   177→        "Matière : acier inoxydable 316L, dorure PVD",
+   178→        "Design : mailles plates 4 mm",
+   179→        "Finition : waterproof, hypoallergénique",
+   180→      ],
+   181→      en: [
+   182→        "Material: 316L stainless steel, PVD gold coating",
+   183→        "Design: 4 mm flat links",
+   184→        "Finish: waterproof, hypoallergenic",
+   185→      ],
+   186→    },
+   187→    variants: { lengths: ["45 cm", "50 cm", "60 cm"] },
+   188→  },
+   189→
+   190→  /* ---------------------------------- BAGUES ----------------------------------- */
+   191→  {
+   192→    slug: "bague-nova",
+   193→    name: "Bague Nova",
+   194→    category: "bagues",
+   195→    materials: ["plaque-or"],
+   196→    priceXof: 12500,
+   197→    images: [img("bague-nova")],
+   198→    rating: 4.8,
+   199→    reviews: 167,
+   200→    isBestseller: true,
+   201→    short: {
+   202→      fr: "Anneau fin serti de zircones — la favorite des clientes ORAYA.",
+   203→      en: "Slim ring set with zircons — the ORAYA customer favourite.",
+   204→    },
+   205→    description: {
+   206→      fr: "La Bague Nova doit son nom à cette explosion d'éclat discret : un anneau fin en plaqué or aux reflets lumineux. Elle se superpose à l'infini ou se porte seule, en signature.",
+   207→      en: "The Nova ring owes its name to that burst of discreet sparkle: a slim gold-plated band with luminous reflections. Stack it endlessly or wear it alone as a signature.",
+   208→    },
+   209→    details: {
+   210→      fr: [
+   211→        "Matière : plaqué or 18 carats",
+   212→        "Design : anneau 1,8 mm, profil arrondi",
+   213→        "Finition : poli miroir, confort optimal",
+   214→      ],
+   215→      en: [
+   216→        "Material: 18k gold plated",
+   217→        "Design: 1.8 mm band, rounded profile",
+   218→        "Finish: mirror polish, optimal comfort",
+   219→      ],
+   220→    },
+   221→    variants: { sizes: ["48", "50", "52", "54", "56", "58", "60"], colors: ["or", "argent"] },
+   222→  },
+   223→  {
+   224→    slug: "bague-perle",
+   225→    name: "Bague Perle",
+   226→    category: "bagues",
+   227→    materials: ["argent-925"],
+   228→    priceXof: 18000,
+   229→    images: [img("bague-perle")],
+   230→    rating: 4.7,
+   231→    reviews: 63,
+   232→    isNew: true,
+   233→    short: {
+   234→      fr: "Perle d'eau douce sur argent 925 — douceur nacrée du bout des doigts.",
+   235→      en: "Freshwater pearl on 925 silver — pearly softness at your fingertips.",
+   236→    },
+   237→    description: {
+   238→      fr: "Une perle d'eau douce choisie à la main, montée sur un anneau d'argent 925 : la Bague Perle apporte une note d'élégance classique à chaque geste.",
+   239→      en: "A hand-picked freshwater pearl mounted on a 925 silver band: the Perle ring brings a note of classic elegance to every gesture.",
+   240→    },
+   241→    details: {
+   242→      fr: [
+   243→        "Matière : argent 925, perle d'eau douce 7–8 mm",
+   244→        "Design : anneau torsadé fin",
+   245→        "Finition : rhodiage brillant",
+   246→      ],
+   247→      en: [
+   248→        "Material: 925 silver, 7–8 mm freshwater pearl",
+   249→        "Design: slim twisted band",
+   250→        "Finish: bright rhodium plating",
+   251→      ],
+   252→    },
+   253→    variants: { sizes: ["48", "50", "52", "54", "56", "58"] },
+   254→  },
+   255→  {
+   256→    slug: "bague-soleil",
+   257→    name: "Bague Soleil",
+   258→    category: "bagues",
+   259→    materials: ["or-veritable"],
+   260→    priceXof: 75000,
+   261→    images: [img("bague-soleil")],
+   262→    rating: 4.9,
+   263→    reviews: 41,
+   264→    short: {
+   265→      fr: "Or massif 18 carats, motif rayons de soleil — une bague-héritage.",
+   266→      en: "18k solid gold, sunray motif — an heirloom ring.",
+   267→    },
+   268→    description: {
+   269→      fr: "La Bague Soleil se transmettra : or massif 18 carats, motif rayons ciselés et ce halo chaud qui réchauffe le regard. Une pièce d'exception livrée avec son certificat.",
+   270→      en: "The Soleil ring will be passed down: 18k solid gold, chiselled sunray motif and that warm halo that lights up the eye. An exceptional piece delivered with its certificate.",
+   271→    },
+   272→    details: {
+   273→      fr: [
+   274→        "Matière : or jaune 18 carats (750‰)",
+   275→        "Design : rayons de soleil ciselés, 12 mm",
+   276→        "Finition : poli satiné double texture",
+   277→      ],
+   278→      en: [
+   279→        "Material: 18k yellow gold (750‰)",
+   280→        "Design: chiselled sunrays, 12 mm",
+   281→        "Finish: dual-texture satin polish",
+   282→      ],
+   283→    },
+   284→    variants: { sizes: ["50", "52", "54", "56", "58"] },
+   285→  },
+   286→  {
+   287→    slug: "bague-twist",
+   288→    name: "Bague Twist",
+   289→    category: "bagues",
+   290→    materials: ["acier-inoxydable"],
+   291→    priceXof: 7500,
+   292→    images: [img("bague-twist"), img("bague-twist", 2)],
+   293→    rating: 4.5,
+   294→    reviews: 97,
+   295→    short: {
+   296→      fr: "Torsade acier doré, waterproof — l'audace au quotidien.",
+   297→      en: "Gold steel twist, waterproof — everyday boldness.",
+   298→    },
+   299→    description: {
+   300→      fr: "Sa torsade graphique en acier inoxydable doré ne quitte plus votre main : waterproof et anti-rayures, la Bague Twist survit à tout, même à vos journées les plus folles.",
+   301→      en: "Its graphic twist of gold stainless steel will never leave your hand: waterproof and scratch-resistant, the Twist ring survives everything — even your wildest days.",
+   302→    },
+   303→    details: {
+   304→      fr: [
+   305→        "Matière : acier inoxydable 316L doré PVD",
+   306→        "Design : torsade 4 mm, profil arrondi",
+   307→        "Finition : waterproof, anti-rayures",
+   308→      ],
+   309→      en: [
+   310→        "Material: PVD gold-plated 316L stainless steel",
+   311→        "Design: 4 mm twist, rounded profile",
+   312→        "Finish: waterproof, scratch-resistant",
+   313→      ],
+   314→    },
+   315→    variants: { sizes: ["48", "50", "52", "54", "56", "58", "60"] },
+   316→  },
+   317→  {
+   318→    slug: "bague-amara",
+   319→    name: "Bague Amara",
+   320→    category: "bagues",
+   321→    materials: ["plaque-or"],
+   322→    priceXof: 21000,
+   323→    compareAtXof: 26000,
+   324→    images: [img("bague-amara")],
+   325→    rating: 4.6,
+   326→    reviews: 52,
+   327→    short: {
+   328→      fr: "Bague cocktail zircone émeraude — l'éclat audacieux à prix doux.",
+   329→      en: "Emerald-zircon cocktail ring — bold sparkle, gentle price.",
+   330→    },
+   331→    description: {
+   332→      fr: "Amara, « grâce » : une zircone taille émeraude sertie d'un halo doré, sur plaqué or 18 carats. La bague qui transforme une simple tenue en grand soir.",
+   333→      en: "Amara, meaning grace: an emerald-cut zircon set in a golden halo on 18k gold plating. The ring that turns a simple outfit into a grand evening.",
+   334→    },
+   335→    details: {
+   336→      fr: [
+   337→        "Matière : plaqué or 18 carats, zircone taille émeraude",
+   338→        "Design : halo de zircons, 10 mm",
+   339→        "Finition : poli miroir, galerie ajourée",
+   340→      ],
+   341→      en: [
+   342→        "Material: 18k gold plated, emerald-cut zircon",
+   343→        "Design: zircon halo, 10 mm",
+   344→        "Finish: mirror polish, open gallery",
+   345→      ],
+   346→    },
+   347→    variants: { sizes: ["50", "52", "54", "56", "58"] },
+   348→  },
+   349→
+   350→  /* --------------------------------- PENDENTIFS -------------------------------- */
+   351→  {
+   352→    slug: "pendantif-luna",
+   353→    name: "Pendentif Luna",
+   354→    category: "pendentifs",
+   355→    materials: ["plaque-or"],
+   356→    priceXof: 16500,
+   357→    images: [img("pendantif-luna"), img("pendantif-luna", 2)],
+   358→    rating: 4.8,
+   359→    reviews: 143,
+   360→    isBestseller: true,
+   361→    short: {
+   362→      fr: "Pendentif doré sur chaîne fine — le talisman nocturne.",
+   363→      en: "Gold pendant on a fine chain — the nighttime talisman.",
+   364→    },
+   365→    description: {
+   366→      fr: "Le Pendentif Luna célèbre la nuit ivoirienne : un pendentif doré sculpté suspendu à une chaîne forçat. À porter seul ou superposé avec le Collier Luna pour un ciel entier autour du cou.",
+   367→      en: "The Luna pendant celebrates the Ivorian night: a sculpted gold pendant suspended from a cable chain. Wear it alone or layered with the Luna necklace for a whole sky around your neck.",
+   368→    },
+   369→    details: {
+   370→      fr: [
+   371→        "Matière : plaqué or 18 carats",
+   372→        "Design : pendentif 12 mm, chaîne forçat 1 mm",
+   373→        "Finition : poli miroir anti-ternissement",
+   374→      ],
+   375→      en: [
+   376→        "Material: 18k gold plated",
+   377→        "Design: 12 mm pendant, 1 mm cable chain",
+   378→        "Finish: anti-tarnish mirror polish",
+   379→      ],
+   380→    },
+   381→    variants: { lengths: ["40 cm", "45 cm", "50 cm"], colors: ["or", "argent"] },
+   382→  },
+   383→  {
+   384→    slug: "pendantif-etoile",
+   385→    name: "Pendentif Étoile",
+   386→    category: "pendentifs",
+   387→    materials: ["argent-925"],
+   388→    priceXof: 12000,
+   389→    images: [img("pendantif-etoile"), img("pendantif-etoile", 2)],
+   390→    rating: 4.7,
+   391→    reviews: 71,
+   392→    short: {
+   393→      fr: "Étoile à quatre branches en argent 925 — l'esprit ORAYA en pendant.",
+   394→      en: "Four-point star in 925 silver — the ORAYA spirit as a pendant.",
+   395→    },
+   396→    description: {
+   397→      fr: "Notre étoile signature, celle de votre écrin ORAYA, en pendentif d'argent 925 rhodié : quatre branches polies qui captent la lumière comme des reflets d'eau.",
+   398→      en: "Our signature star — the one on your ORAYA case — as a rhodium-plated 925 silver pendant: four polished branches catching light like reflections on water.",
+   399→    },
+   400→    details: {
+   401→      fr: [
+   402→        "Matière : argent 925 rhodié",
+   403→        "Design : étoile 4 branches 11 mm, chaîne vénitienne",
+   404→        "Finition : rhodiage miroir",
+   405→      ],
+   406→      en: [
+   407→        "Material: rhodium-plated 925 silver",
+   408→        "Design: 11 mm four-point star, venetian chain",
+   409→        "Finish: mirror rhodium plating",
+   410→      ],
+   411→    },
+   412→    variants: { lengths: ["40 cm", "45 cm", "50 cm"] },
+   413→  },
+   414→  {
+   415→    slug: "pendantif-coeur-ivoire",
+   416→    name: "Pendentif Cœur d'Ivoire",
+   417→    category: "pendentifs",
+   418→    materials: ["or-veritable"],
+   419→    priceXof: 58000,
+   420→    images: [img("pendantif-coeur-ivoire")],
+   421→    rating: 5,
+   422→    reviews: 29,
+   423→    isNew: true,
+   424→    short: {
+   425→      fr: "Cœur gravé en or véritable — la déclaration qui traverse les années.",
+   426→      en: "Engraved heart in solid gold — the declaration that lasts years.",
+   427→    },
+   428→    description: {
+   429→      fr: "Un cœur d'or véritable 18 carats que notre atelier grave à la main de vos initiales ou d'une date : le Pendentif Cœur d'Ivoire devient, à jamais, votre bijou d'histoire.",
+   430→      en: "An 18k solid gold heart that our workshop hand-engraves with your initials or a date: the Cœur d'Ivoire pendant becomes, forever, your story jewel.",
+   431→    },
+   432→    details: {
+   433→      fr: [
+   434→        "Matière : or jaune 18 carats (750‰)",
+   435→        "Design : cœur 14 mm, gravure offerte",
+   436→        "Finition : poli miroir, dos gravable",
+   437→      ],
+   438→      en: [
+   439→        "Material: 18k yellow gold (750‰)",
+   440→        "Design: 14 mm heart, free engraving",
+   441→        "Finish: mirror polish, engravable back",
+   442→      ],
+   443→    },
+   444→    variants: { lengths: ["42 cm", "45 cm", "50 cm"] },
+   445→  },
+   446→  {
+   447→    slug: "pendantif-perle",
+   448→    name: "Pendentif Perle",
+   449→    category: "pendentifs",
+   450→    materials: ["plaque-or"],
+   451→    priceXof: 14500,
+   452→    images: [img("pendantif-perle"), img("pendantif-perle", 2)],
+   453→    rating: 4.6,
+   454→    reviews: 66,
+   455→    short: {
+   456→      fr: "Perle nacrée sur chaîne dorée — chaque pièce est unique.",
+   457→      en: "Nacre pearl on a gold chain — every piece is one of a kind.",
+   458→    },
+   459→    description: {
+   460→      fr: "Aucune perle ne se ressemble : suspendue à une chaîne dorée fine, la vôtre aura ses propres courbes et reflets. Un bijou unique pour une porteuse unique.",
+   461→      en: "No two pearls are alike: hung on a fine gold chain, yours will have its own curves and reflections. A unique jewel for a unique wearer.",
+   462→    },
+   463→    details: {
+   464→      fr: [
+   465→        "Matière : plaqué or 18 carats, perle d'eau douce",
+   466→        "Design : chaîne 1,2 mm, bague de réglage",
+   467→        "Finition : perle naturelle, certificat inclus",
+   468→      ],
+   469→      en: [
+   470→        "Material: 18k gold plated, freshwater pearl",
+   471→        "Design: 1.2 mm chain, adjuster ring",
+   472→        "Finish: natural pearl, certificate included",
+   473→      ],
+   474→    },
+   475→    variants: { lengths: ["40 cm", "45 cm", "50 cm"] },
+   476→  },
+   477→
+   478→  /* --------------------------------- BRACELETS --------------------------------- */
+   479→  {
+   480→    slug: "bracelet-nova",
+   481→    name: "Bracelet Nova",
+   482→    category: "bracelets",
+   483→    materials: ["plaque-or"],
+   484→    priceXof: 13500,
+   485→    images: [img("bracelet-nova"), img("bracelet-nova", 2)],
+   486→    rating: 4.8,
+   487→    reviews: 158,
+   488→    isBestseller: true,
+   489→    short: {
+   490→      fr: "Chaîne fine dorée — le poignet illuminé.",
+   491→      en: "Fine gold chain — a lit-up wrist.",
+   492→    },
+   493→    description: {
+   494→      fr: "Le Bracelet Nova habille le poignet d'une chaîne dorée ultra-fine : assez discret pour le bureau, assez lumineux pour les soirées. Il se superpose à merveille avec le Bracelet Perles.",
+   495→      en: "The Nova bracelet dresses the wrist in an ultra-fine gold chain: discreet enough for the office, luminous enough for evenings. It layers beautifully with the Perles bracelet.",
+   496→    },
+   497→    details: {
+   498→      fr: [
+   499→        "Matière : plaqué or 18 carats",
+   500→        "Design : chaîne 1,5 mm, chaînette de réglage 3 cm",
+   501→        "Finition : poli miroir",
+   502→      ],
+   503→      en: [
+   504→        "Material: 18k gold plated",
+   505→        "Design: 1.5 mm chain, 3 cm adjuster",
+   506→        "Finish: mirror polish",
+   507→      ],
+   508→    },
+   509→    variants: { colors: ["or", "argent"] },
+   510→  },
+   511→  {
+   512→    slug: "bracelet-jonc-or",
+   513→    name: "Jonc Or",
+   514→    category: "bracelets",
+   515→    materials: ["or-veritable"],
+   516→    priceXof: 65000,
+   517→    images: [img("bracelet-jonc-or")],
+   518→    rating: 4.9,
+   519→    reviews: 38,
+   520→    short: {
+   521→      fr: "Jonc plein en or 18 carats — le classique absolu.",
+   522→      en: "Solid 18k gold bangle — the absolute classic.",
+   523→    },
+   524→    description: {
+   525→      fr: "Le Jonc Or est la première pièce d'investissement : or plein 18 carats, profil doux, charnière précise. Il se porte seul en signature ou en accumulation avec vos bracelets fins.",
+   526→      en: "The Jonc Or is the first investment piece: solid 18k gold, soft profile, precise hinge. Wear it alone as a signature or stacked with your fine bracelets.",
+   527→    },
+   528→    details: {
+   529→      fr: [
+   530→        "Matière : or jaune 18 carats (750‰)",
+   531→        "Design : jonc plein 3 mm, charnière box",
+   532→        "Finition : poli haute brillance, poinçon",
+   533→      ],
+   534→      en: [
+   535→        "Material: 18k yellow gold (750‰)",
+   536→        "Design: solid 3 mm bangle, box hinge",
+   537→        "Finish: high polish, hallmarked",
+   538→      ],
+   539→    },
+   540→    variants: { sizes: ["S", "M", "L"] },
+   541→  },
+   542→  {
+   543→    slug: "bracelet-chaine-acier",
+   544→    name: "Bracelet Chaîne Acier",
+   545→    category: "bracelets",
+   546→    materials: ["acier-inoxydable"],
+   547→    priceXof: 8900,
+   548→    images: [img("bracelet-chaine-acier"), img("bracelet-chaine-acier", 2)],
+   549→    rating: 4.5,
+   550→    reviews: 84,
+   551→    short: {
+   552→      fr: "Chaîne acier doré — indestructible, waterproof, sans compromis.",
+   553→      en: "Gold steel chain bracelet — unbreakable, waterproof, no compromise.",
+   554→    },
+   555→    description: {
+   556→      fr: "Une chaîne en acier inoxydable doré qui traverse tout : sport, mer, douche. Le Bracelet Chaîne Acier est le compagnon des poignets qui ne s'ennuient jamais.",
+   557→      en: "A gold stainless steel chain bracelet that goes through everything: gym, sea, shower. The Chaîne Acier bracelet is the companion for wrists that never rest.",
+   558→    },
+   559→    details: {
+   560→      fr: [
+   561→        "Matière : acier inoxydable 316L doré PVD",
+   562→        "Design : mailles 5 mm, fermoir mousqueton double",
+   563→        "Finition : waterproof, anti-rayures",
+   564→      ],
+   565→      en: [
+   566→        "Material: PVD gold-plated 316L stainless steel",
+   567→        "Design: 5 mm links, double lobster clasp",
+   568→        "Finish: waterproof, scratch-resistant",
+   569→      ],
+   570→    },
+   571→    variants: { sizes: ["S", "M", "L"] },
+   572→  },
+   573→  {
+   574→    slug: "bracelet-perles",
+   575→    name: "Bracelet Perles",
+   576→    category: "bracelets",
+   577→    materials: ["argent-925"],
+   578→    priceXof: 17500,
+   579→    images: [img("bracelet-perles")],
+   580→    rating: 4.7,
+   581→    reviews: 59,
+   582→    isNew: true,
+   583→    short: {
+   584→      fr: "Perles nacrées et argent 925 — la douceur en écho au poignet.",
+   585→      en: "Nacre pearls and 925 silver — softness echoing at the wrist.",
+   586→    },
+   587→    description: {
+   588→      fr: "Des perles nacrées enfilées sur fil d'argent 925, séparées de petits anneaux polis : le Bracelet Perles capture la lumière douce des matins d'Abidjan.",
+   589→      en: "Nacre pearls threaded on 925 silver wire, separated by small polished rings: the Perles bracelet captures the soft morning light of Abidjan.",
+   590→    },
+   591→    details: {
+   592→      fr: [
+   593→        "Matière : argent 925, perles nacrées 6 mm",
+   594→        "Design : fils torsadés, extensible 1,5 cm",
+   595→        "Finition : rhodiage brillant",
+   596→      ],
+   597→      en: [
+   598→        "Material: 925 silver, 6 mm nacre pearls",
+   599→        "Design: twisted wires, 1.5 cm stretch",
+   600→        "Finish: bright rhodium plating",
+   601→      ],
+   602→    },
+   603→  },
+   604→
+   605→  /* ----------------------------- BOUCLES D'OREILLES ----------------------------- */
+   606→  {
+   607→    slug: "boucles-aurore",
+   608→    name: "Boucles d'oreilles Aurore",
+   609→    category: "boucles-oreilles",
+   610→    materials: ["plaque-or"],
+   611→    priceXof: 11500,
+   612→    compareAtXof: 14500,
+   613→    images: [img("boucles-aurore"), img("boucles-aurore", 2)],
+   614→    rating: 4.8,
+   615→    reviews: 189,
+   616→    isBestseller: true,
+   617→    short: {
+   618→      fr: "Créoles fines dorées — best-seller ORAYA, promotion en cours.",
+   619→      en: "Slim gold hoops — ORAYA best-seller, now on sale.",
+   620→    },
+   621→    description: {
+   622→      fr: "Nos Boucles Aurore illuminent chaque visage : créoles fines en plaqué or, légères comme une promesse. La paire la plus vendue d'ORAYA — et la promo du moment.",
+   623→      en: "Our Aurore earrings light up every face: slim gold-plated hoops, light as a promise. ORAYA's best-selling pair — and currently on sale.",
+   624→    },
+   625→    details: {
+   626→      fr: [
+   627→        "Matière : plaqué or 18 carats",
+   628→        "Design : créoles 20 mm",
+   629→        "Finition : poli miroir, tiges hypoallergéniques",
+   630→      ],
+   631→      en: [
+   632→        "Material: 18k gold plated",
+   633→        "Design: 20 mm hoops",
+   634→        "Finish: mirror polish, hypoallergenic posts",
+   635→      ],
+   636→    },
+   637→    variants: { colors: ["or", "argent"] },
+   638→  },
+   639→  {
+   640→    slug: "boucles-perle",
+   641→    name: "Boucles Perle",
+   642→    category: "boucles-oreilles",
+   643→    materials: ["argent-925"],
+   644→    priceXof: 15500,
+   645→    images: [img("boucles-perle")],
+   646→    rating: 4.7,
+   647→    reviews: 77,
+   648→    short: {
+   649→      fr: "Puces perle d'eau douce sur argent 925 — l'élégance minimale.",
+   650→      en: "Freshwater pearl studs on 925 silver — minimal elegance.",
+   651→    },
+   652→    description: {
+   653→      fr: "Deux perles d'eau douce montées sur argent 925 rhodié : les Boucles Perle sont ce geste simple qui suffit — col relevé, regard lumineux.",
+   654→      en: "Two freshwater pearls mounted on rhodium-plated 925 silver: the Perle earrings are that one simple gesture that's enough — updo hair, luminous eyes.",
+   655→    },
+   656→    details: {
+   657→      fr: [
+   658→        "Matière : argent 925 rhodié, perles 8 mm",
+   659→        "Design : puces à papillons renforcés",
+   660→        "Finition : rhodiage miroir",
+   661→      ],
+   662→      en: [
+   663→        "Material: rhodium-plated 925 silver, 8 mm pearls",
+   664→        "Design: studs with reinforced butterflies",
+   665→        "Finish: mirror rhodium plating",
+   666→      ],
+   667→    },
+   668→  },
+   669→  {
+   670→    slug: "boucles-creoles",
+   671→    name: "Créoles Dorées",
+   672→    category: "boucles-oreilles",
+   673→    materials: ["plaque-or"],
+   674→    priceXof: 19000,
+   675→    images: [img("boucles-creoles"), img("boucles-creoles", 2)],
+   676→    rating: 4.6,
+   677→    reviews: 92,
+   678→    short: {
+   679→      fr: "Créoles XL texturées — l'audace maîtrisée.",
+   680→      en: "Textured XL hoops — mastered boldness.",
+   681→    },
+   682→    description: {
+   683→      fr: "Des créoles généreuses au plaqué or 18 carats et à la texture qui capte la lumière au moindre mouvement : les Créoles Dorées signent les grands soirs.",
+   684→      en: "Generous hoops in 18k gold plating with a texture that catches light with every move: the Créoles Dorées sign off grand evenings.",
+   685→    },
+   686→    details: {
+   687→      fr: [
+   688→        "Matière : plaqué or 18 carats, 3 microns",
+   689→        "Design : créoles 35 mm",
+   690→        "Finition : poli miroir, fermoir clic",
+   691→      ],
+   692→      en: [
+   693→        "Material: 18k gold plated, 3 microns",
+   694→        "Design: 35 mm hoops",
+   695→        "Finish: mirror polish, click clasp",
+   696→      ],
+   697→    },
+   698→    variants: { colors: ["or", "or-rose"] },
+   699→  },
+   700→  {
+   701→    slug: "boucles-goutte",
+   702→    name: "Boucles Goutte d'Or",
+   703→    category: "boucles-oreilles",
+   704→    materials: ["or-veritable"],
+   705→    priceXof: 95000,
+   706→    images: [img("boucles-goutte")],
+   707→    rating: 4.9,
+   708→    reviews: 24,
+   709→    isNew: true,
+   710→    short: {
+   711→      fr: "Pendantes or 18 carats — la goutte qui fait l'océan.",
+   712→      en: "18k gold drops — the drop that makes the ocean.",
+   713→    },
+   714→    description: {
+   715→      fr: "Une goutte d'or véritable 18 carats : les Boucles Goutte d'Or sont notre pièce de haute joaillerie la plus convoitée — produite en très petite série.",
+   716→      en: "A drop of genuine 18k gold: the Goutte d'Or earrings are our most coveted fine-jewelry piece — produced in a very small series.",
+   717→    },
+   718→    details: {
+   719→      fr: [
+   720→        "Matière : or jaune 18 carats (750‰)",
+   721→        "Design : goutte 22 mm, articulation mobile",
+   722→        "Finition : poli miroir, série limitée numérotée",
+   723→      ],
+   724→      en: [
+   725→        "Material: 18k yellow gold (750‰)",
+   726→        "Design: 22 mm drop, mobile articulation",
+   727→        "Finish: mirror polish, numbered limited series",
+   728→      ],
+   729→    },
+   730→  },
+   731→
+   732→  /* ---------------------------------- PARURES ---------------------------------- */
+   733→  {
+   734→    slug: "parure-eclat",
+   735→    name: "Parure Éclat",
+   736→    category: "parures",
+   737→    materials: ["plaque-or"],
+   738→    priceXof: 45000,
+   739→    compareAtXof: 52000,
+   740→    images: [img("parure-eclat"), img("parure-eclat", 2)],
+   741→    rating: 4.8,
+   742→    reviews: 57,
+   743→    isBestseller: true,
+   744→    short: {
+   745→      fr: "Collier + boucles assorties — le duo des grandes occasions.",
+   746→      en: "Matching necklace + earrings — the big-occasion duo.",
+   747→    },
+   748→    description: {
+   749→      fr: "La Parure Éclat réunit notre collier et ses boucles jumelles en plaqué or 18 carats : cérémonies, mariages, anniversaires — il n'y a plus qu'à briller.",
+   750→      en: "The Éclat set brings together our necklace and its twin earrings in 18k gold plating: ceremonies, weddings, birthdays — all that's left is to shine.",
+   751→    },
+   752→    details: {
+   753→      fr: [
+   754→        "Matière : plaqué or 18 carats",
+   755→        "Design : collier 45 cm + boucles 18 mm assorties",
+   756→        "Finition : poli miroir, écrin duo ORAYA",
+   757→      ],
+   758→      en: [
+   759→        "Material: 18k gold plated",
+   760→        "Design: 45 cm necklace + matching 18 mm earrings",
+   761→        "Finish: mirror polish, ORAYA duo case",
+   762→      ],
+   763→    },
+   764→    variants: { colors: ["or", "argent"] },
+   765→  },
+   766→  {
+   767→    slug: "parure-royale",
+   768→    name: "Parure Royale",
+   769→    category: "parures",
+   770→    materials: ["or-veritable"],
+   771→    priceXof: 145000,
+   772→    images: [img("parure-royale")],
+   773→    rating: 5,
+   774→    reviews: 18,
+   775→    short: {
+   776→      fr: "Collier et boucles en or véritable — le trésor de cérémonie.",
+   777→      en: "Necklace and earrings in solid gold — the ceremony treasure.",
+   778→    },
+   779→    description: {
+   780→      fr: "Un ensemble d'or véritable 18 carats — collier ras-de-cou et boucles pendantes — livré dans son coffret ORAYA prestige. La parure des jours qui comptent.",
+   781→      en: "A genuine 18k gold set — choker necklace and drop earrings — delivered in the ORAYA prestige case. The set for the days that matter.",
+   782→    },
+   783→    details: {
+   784→      fr: [
+   785→        "Matière : or jaune 18 carats (750‰)",
+   786→        "Design : collier 40 cm, boucles 30 mm",
+   787→        "Finition : poli haute brillance, coffret prestige",
+   788→      ],
+   789→      en: [
+   790→        "Material: 18k yellow gold (750‰)",
+   791→        "Design: 40 cm necklace, 30 mm earrings",
+   792→        "Finish: high polish, prestige case",
+   793→      ],
+   794→    },
+   795→  },
+   796→
+   797→  /* ---------------------------------- MONTRES ---------------------------------- */
+   798→  {
+   799→    slug: "montre-elegance",
+   800→    name: "Montre Élégance",
+   801→    category: "montres",
+   802→    materials: ["acier-inoxydable"],
+   803→    priceXof: 29000,
+   804→    images: [img("montre-elegance"), img("montre-elegance", 2)],
+   805→    rating: 4.6,
+   806→    reviews: 46,
+   807→    short: {
+   808→      fr: "Boîtier acier, cadran nacre — la ponctualité en beauté.",
+   809→      en: "Steel case, nacre dial — punctuality in beauty.",
+   810→    },
+   811→    description: {
+   812→      fr: "La Montre Élégance joue la carte du minimalisme : boîtier acier, cadran lumineux et bracelet fin. Un garde-temps qui traverse les modes.",
+   813→      en: "The Élégance watch plays the minimalism card: steel case, luminous dial and slim strap. A timepiece that outlives trends.",
+   814→    },
+   815→    details: {
+   816→      fr: [
+   817→        "Matière : acier inoxydable, verre minéral renforcé",
+   818→        "Design : boîtier 30 mm, bracelet fin",
+   819→        "Finition : mouvement quartz japonais, 3 ATM",
+   820→      ],
+   821→      en: [
+   822→        "Material: stainless steel, reinforced mineral glass",
+   823→        "Design: 30 mm case, slim strap",
+   824→        "Finish: Japanese quartz movement, 3 ATM",
+   825→      ],
+   826→    },
+   827→    variants: { colors: ["or", "argent"] },
+   828→  },
+   829→  {
+   830→    slug: "montre-prestige",
+   831→    name: "Montre Prestige Dorée",
+   832→    category: "montres",
+   833→    materials: ["plaque-or"],
+   834→    priceXof: 39000,
+   835→    images: [img("montre-prestige"), img("montre-prestige", 2)],
+   836→    rating: 4.7,
+   837→    reviews: 33,
+   838→    isNew: true,
+   839→    short: {
+   840→      fr: "Montre dorée bracelet maillons — l'accessoire statut.",
+   841→      en: "Gold link-strap watch — the status accessory.",
+   842→    },
+   843→    description: {
+   844→      fr: "La Montre Prestige assume son nom : dorure 18 carats sur boîtier et bracelet maillons, cadran champagne. Elle se remarque, poliment.",
+   845→      en: "The Prestige watch owns its name: 18k gilding on the case and link bracelet, champagne dial. It gets noticed — politely.",
+   846→    },
+   847→    details: {
+   848→      fr: [
+   849→        "Matière : plaqué or 18 carats sur acier",
+   850→        "Design : boîtier 32 mm, bracelet maillons",
+   851→        "Finition : quartz japonais, 3 ATM",
+   852→      ],
+   853→      en: [
+   854→        "Material: 18k gold plated on steel",
+   855→        "Design: 32 mm case, link bracelet",
+   856→        "Finish: Japanese quartz, 3 ATM",
+   857→      ],
+   858→    },
+   859→    variants: { colors: ["or", "argent"] },
+   860→  },
+   861→
+   862→  /* ------------------------------ BIJOUX PERSONNALISÉS -------------------------- */
+   863→  {
+   864→    slug: "pendantif-prenom",
+   865→    name: "Pendentif Prénom",
+   866→    category: "pendentifs",
+   867→    materials: ["plaque-or"],
+   868→    priceXof: 19500,
+   869→    images: [img("pendantif-prenom"), img("pendantif-prenom", 2)],
+   870→    rating: 4.9,
+   871→    reviews: 210,
+   872→    isBestseller: true,
+   873→    custom: "prenom",
+   874→    short: {
+   875→      fr: "Votre prénom en lettres dorées, façonné à la main.",
+   876→      en: "Your name in golden letters, handcrafted.",
+   877→    },
+   878→    description: {
+   879→      fr: "Choisissez le prénom, la police et la finition : notre atelier façonne chaque lettre à la main avant de la suspendre à une fine chaîne dorée. Le cadeau qui fait pleurer de joie.",
+   880→      en: "Choose the name, font and finish: our workshop handcrafts every letter before hanging it on a fine gold chain. The gift that brings tears of joy.",
+   881→    },
+   882→    details: {
+   883→      fr: [
+   884→        "Matière : plaqué or 18 carats ou argent 925",
+   885→        "Design : lettres script 12–20 mm, chaîne au choix",
+   886→        "Finition : fabrication à la main, 48–72h",
+   887→      ],
+   888→      en: [
+   889→        "Material: 18k gold plated or 925 silver",
+   890→        "Design: 12–20 mm script letters, chain of choice",
+   891→        "Finish: handmade, 48–72h",
+   892→      ],
+   893→    },
+   894→    variants: { lengths: ["40 cm", "45 cm", "50 cm"], colors: ["or", "argent"] },
+   895→  },
+   896→  {
+   897→    slug: "pendantif-photo",
+   898→    name: "Pendentif Photo",
+   899→    category: "pendentifs",
+   900→    materials: ["plaque-or"],
+   901→    priceXof: 22000,
+   902→    images: [img("pendantif-photo")],
+   903→    rating: 4.9,
+   904→    reviews: 96,
+   905→    custom: "photo",
+   906→    short: {
+   907→      fr: "Votre photo préférée, gardée près du cœur.",
+   908→      en: "Your favourite photo, kept close to the heart.",
+   909→    },
+   910→    description: {
+   911→      fr: "Un médaillon doré qui s'ouvre sur votre photo souvenir : maman, enfant, amour ou souvenir. Envoyez-nous la photo sur WhatsApp après votre commande, notre atelier se charge du reste.",
+   912→      en: "A gold locket that opens onto your keepsake photo: mum, child, love or memory. Send us the photo on WhatsApp after ordering — our workshop takes care of the rest.",
+   913→    },
+   914→    details: {
+   915→      fr: [
+   916→        "Matière : plaqué or 18 carats, verre protecteur",
+   917→        "Design : médaillon ovale 20 × 25 mm, dos gravable",
+   918→        "Finition : impression haute définition offerte",
+   919→      ],
+   920→      en: [
+   921→        "Material: 18k gold plated, protective glass",
+   922→        "Design: 20 × 25 mm oval locket, engravable back",
+   923→        "Finish: free high-definition print",
+   924→      ],
+   925→    },
+   926→    variants: { lengths: ["45 cm", "50 cm"], colors: ["or", "argent"] },
+   927→  },
+   928→  {
+   929→    slug: "bracelet-grave",
+   930→    name: "Bracelet Gravé",
+   931→    category: "bracelets",
+   932→    materials: ["plaque-or"],
+   933→    priceXof: 16500,
+   934→    images: [img("bracelet-grave"), img("bracelet-grave", 2)],
+   935→    rating: 4.8,
+   936→    reviews: 121,
+   937→    custom: "grave",
+   938→    short: {
+   939→      fr: "Une date, un mot, une promesse — gravés pour toujours.",
+   940→      en: "A date, a word, a promise — engraved forever.",
+   941→    },
+   942→    description: {
+   943→      fr: "Sur ce bracelet plaqué or, notre atelier grave à la main votre message : une date d'anniversaire, un prénom, « à toi toujours ». Un bijou qui dit ce que vous n'osez pas.",
+   944→      en: "On this gold-plated bracelet, our workshop hand-engraves your message: a birthday date, a name, \"forever yours\". A jewel that says what you dare not.",
+   945→    },
+   946→    details: {
+   947→      fr: [
+   948→        "Matière : plaqué or 18 carats, plaque gravable",
+   949→        "Design : plaque 30 × 6 mm, chaîne 1,5 mm",
+   950→        "Finition : gravure main, 20 caractères offerts",
+   951→      ],
+   952→      en: [
+   953→        "Material: 18k gold plated, engravable plate",
+   954→        "Design: 30 × 6 mm plate, 1.5 mm chain",
+   955→        "Finish: hand engraving, 20 characters included",
+   956→      ],
+   957→    },
+   958→    variants: { colors: ["or", "argent"] },
+   959→  },
+   960→
+   961→  /* ----------------------------------- HOMME ----------------------------------- */
+   962→  {
+   963→    slug: "chaine-homme-cobra",
+   964→    name: "Chaîne Homme Cobra",
+   965→    category: "colliers",
+   966→    materials: ["acier-inoxydable"],
+   967→    priceXof: 27500,
+   968→    images: [img("chaine-homme-cobra"), img("chaine-homme-cobra", 2)],
+   969→    rating: 4.7,
+   970→    reviews: 88,
+   971→    isBestseller: true,
+   972→    forMen: true,
+   973→    short: {
+   974→      fr: "Chaîne cobra acier doré 6 mm — le style qui ne s'excuse pas.",
+   975→      en: "6 mm gold cobra steel chain — unapologetic style.",
+   976→    },
+   977→    description: {
+   978→      fr: "La Chaîne Cobra est notre best-seller homme : maille cobra 6 mm en acier inoxydable doré, waterproof et indestructible. Elle se porte seule ou avec le Bracelet Homme Onyx.",
+   979→      en: "The Cobra chain is our men's best-seller: 6 mm cobra link in gold stainless steel, waterproof and unbreakable. Wear it alone or with the Onyx men's bracelet.",
+   980→    },
+   981→    details: {
+   982→      fr: [
+   983→        "Matière : acier inoxydable 316L doré PVD",
+   984→        "Design : maille cobra 6 mm, fermoir renforcé",
+   985→        "Finition : waterproof, anti-rayures",
+   986→      ],
+   987→      en: [
+   988→        "Material: PVD gold-plated 316L stainless steel",
+   989→        "Design: 6 mm cobra link, reinforced clasp",
+   990→        "Finish: waterproof, scratch-resistant",
+   991→      ],
+   992→    },
+   993→    variants: { lengths: ["50 cm", "55 cm", "60 cm"] },
+   994→  },
+   995→  {
+   996→    slug: "bracelet-homme-onyx",
+   997→    name: "Bracelet Homme Onyx",
+   998→    category: "bracelets",
+   999→    materials: ["acier-inoxydable"],
+  1000→    priceXof: 15900,
+  1001→    images: [img("bracelet-homme-onyx"), img("bracelet-homme-onyx", 2)],
+  1002→    rating: 4.6,
+  1003→    reviews: 54,
+  1004→    forMen: true,
+  1005→    short: {
+  1006→      fr: "Perles onyx noires et acier doré — le poignet affirmé.",
+  1007→      en: "Black onyx beads and gold steel — an assertive wrist.",
+  1008→    },
+  1009→    description: {
+  1010→      fr: "Perles d'onyx noir 8 mm et intercalaires en acier doré : le Bracelet Homme Onyx équilibre force et raffinement. Élastique haute résistance, taille ajustable.",
+  1011→      en: "8 mm black onyx beads with gold steel spacers: the Onyx men's bracelet balances strength and refinement. High-strength elastic, adjustable size.",
+  1012→    },
+  1013→    details: {
+  1014→      fr: [
+  1015→        "Matière : onyx naturel 8 mm, acier doré PVD",
+  1016→        "Design : élastique haute résistance",
+  1017→        "Finition : perles polies main",
+  1018→      ],
+  1019→      en: [
+  1020→        "Material: 8 mm natural onyx, PVD gold steel",
+  1021→        "Design: high-strength elastic",
+  1022→        "Finish: hand-polished beads",
+  1023→      ],
+  1024→    },
+  1025→    variants: { sizes: ["S", "M", "L"] },
+  1026→  },
+  1027→];
+  1028→
+  1029→/* ---------------------------------- Helpers ---------------------------------- */
+  1030→
+  1031→export function getProduct(slug: string | undefined): Product | undefined {
+  1032→  if (!slug) return undefined;
+  1033→  return products.find((p) => p.slug === slug);
+  1034→}
+  1035→
+  1036→export function productsByCategory(category: CategorySlug): Product[] {
+  1037→  return products.filter((p) => p.category === category);
+  1038→}
+  1039→
+  1040→export function newArrivals(): Product[] {
+  1041→  const news = products.filter((p) => p.isNew);
+  1042→  return news.length >= 5 ? news : [...news, ...bestSellers()].slice(0, 5);
+  1043→}
+  1044→
+  1045→export function bestSellers(): Product[] {
+  1046→  return products.filter((p) => p.isBestseller);
+  1047→}
+  1048→
+  1049→export function onSale(): Product[] {
+  1050→  return products.filter((p) => p.compareAtXof);
+  1051→}
+  1052→
+  1053→export function customProducts(): Product[] {
+  1054→  return products.filter((p) => p.custom);
+  1055→}
+  1056→
+  1057→export function forMen(): Product[] {
+  1058→  return products.filter((p) => p.forMen);
+  1059→}
+  1060→
+  1061→export function relatedProducts(product: Product, count = 8): Product[] {
+  1062→  const sameCategory = products.filter(
+  1063→    (p) => p.slug !== product.slug && p.category === product.category
+  1064→  );
+  1065→  const fill = bestSellers().filter(
+  1066→    (p) => p.slug !== product.slug && !sameCategory.some((s) => s.slug === p.slug)
+  1067→  );
+  1068→  return [...sameCategory, ...fill].slice(0, count);
+  1069→}
+  1070→
+  1071→/** Category tile image for the "Shop by type" grid (uses a flagship product photo). */
+  1072→export const CATEGORY_TILES: Array<{ slug: CategorySlug; image: string }> = [
+  1073→  { slug: "colliers", image: img("collier-luna") },
+  1074→  { slug: "bagues", image: img("bague-nova") },
+  1075→  { slug: "bracelets", image: img("bracelet-nova") },
+  1076→  { slug: "boucles-oreilles", image: img("boucles-aurore") },
+  1077→  { slug: "montres", image: img("montre-elegance") },
+  1078→  { slug: "parures", image: img("parure-eclat") },
+  1079→];
+  1080→

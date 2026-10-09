@@ -1,0 +1,673 @@
+{
+  "meta": {
+    "title": "ORAYA Maison – Online Jewelry in Abidjan, Côte d'Ivoire",
+    "description": "Jewelry that tells your shine. Necklaces, rings, bracelets, earrings and personalized jewelry, delivered within 24–48h in Abidjan."
+  },
+  "topbar": {
+    "promo": "-15% on your first order",
+    "currency": "Currency",
+    "language": "Language"
+  },
+  "currencies": {
+    "XOF": "FCFA",
+    "EUR": "EUR",
+    "USD": "USD"
+  },
+  "languages": {
+    "fr": "🇫🇷 Français",
+    "en": "🇬🇧 English"
+  },
+  "nav": {
+    "shop": "Shop",
+    "new": "New in",
+    "bestsellers": "Best-sellers",
+    "realGold": "Real gold",
+    "customize": "Customize",
+    "cart": "Cart",
+    "account": "My account",
+    "openMenu": "Open menu",
+    "emptyCart": "Your cart is empty.",
+    "viewCart": "View cart",
+    "checkout": "Checkout",
+    "addedToCart": "Added to cart ✓",
+    "loginTitle": "Client area",
+    "loginIntro": "Sign in to track your orders and find your favorites.",
+    "email": "Email address",
+    "password": "Password",
+    "signIn": "Sign in",
+    "noAccount": "No account yet?",
+    "createAccount": "Create an account",
+    "accountSoon": "The client area is coming very soon. In the meantime, track your order directly on WhatsApp."
+  },
+  "mega": {
+    "byType": "BY TYPE",
+    "byMaterial": "BY MATERIAL",
+    "collections": "COLLECTIONS",
+    "men": "For him",
+    "customJewelry": "Custom jewelry",
+    "viewAllShop": "View the whole shop",
+    "promoCustomTitle": "Custom jewelry",
+    "promoCustomText": "Your name, your photo, your story.",
+    "promoCustomCta": "Discover",
+    "promoLookTitle": "New collection",
+    "promoLookText": "The most coveted pieces of the season.",
+    "promoLookCta": "Shop now"
+  },
+  "categories": {
+    "all": "All jewelry",
+    "bagues": "Rings",
+    "colliers": "Necklaces",
+    "pendentifs": "Pendants",
+    "bracelets": "Bracelets",
+    "boucles-oreilles": "Earrings",
+    "parures": "Jewelry sets",
+    "montres": "Watches"
+  },
+  "materials": {
+    "acier-inoxydable": "Stainless steel",
+    "plaque-or": "Gold plated",
+    "argent-925": "925 silver",
+    "or-veritable": "Real gold"
+  },
+  "customTypes": {
+    "prenom": "Name pendant",
+    "photo": "Photo pendant",
+    "grave": "Engraved bracelet"
+  },
+  "colorNames": {
+    "or": "Gold",
+    "argent": "Silver",
+    "or-rose": "Rose gold"
+  },
+  "badge": {
+    "new": "New",
+    "bestseller": "Best-seller",
+    "promo": "Sale",
+    "homme": "Men"
+  },
+  "whatsapp": {
+    "fabLabel": "Chat on WhatsApp",
+    "orderMessage": "Hello ORAYA Maison, I would like to place an order.",
+    "quoteMessage": "Hello ORAYA Maison, I would like a quote for a custom jewelry piece.",
+    "productMessage": "Hello ORAYA Maison, I would like to order: {name} ({price}).",
+    "orderIntro": "Hello ORAYA Maison, here is my order:",
+    "orderRef": "Order no. {ref}",
+    "orderCustomer": "Name: {name}",
+    "orderPhone": "Phone: {phone}",
+    "orderZone": "Delivery: {zone}",
+    "orderPayment": "Payment: {payment}",
+    "orderTotal": "TOTAL: {total}"
+  },
+  "hero": {
+    "title": "Shine your way, delivered in Abidjan",
+    "subtitle": "Make the ORAYA choice",
+    "cta": "Discover the shop",
+    "alt": "ORAYA muse wearing a gold necklace and rings"
+  },
+  "features": [
+    { "title": "Premium quality", "text": "Materials selected with care" },
+    { "title": "Happy customers", "text": "Over 2,000 customers trust us" },
+    { "title": "WhatsApp support 7/7", "text": "A team at your service" },
+    { "title": "Easy exchange", "text": "Within 7 days, stress-free" },
+    { "title": "Fast delivery", "text": "24–48h across Abidjan" }
+  ],
+  "ambassadors": {
+    "eyebrow": "Our ambassadors",
+    "title": "They wear ORAYA",
+    "list": [
+      { "name": "Aïcha", "wears": "Aurore earrings" },
+      { "name": "Mariam", "wears": "Reine necklace" },
+      { "name": "Akissi", "wears": "Luna pendant" },
+      { "name": "Grâce", "wears": "Étoile necklaces" },
+      { "name": "Saly", "wears": "Nova bracelet" }
+    ]
+  },
+  "collection": {
+    "eyebrow": "Just in",
+    "title": "New collection",
+    "viewTrends": "VIEW TRENDING JEWELRY",
+    "viewAll": "VIEW ALL"
+  },
+  "look": {
+    "title": "What's your style? Elegant or bold?",
+    "elegant": "Simple & Elegant",
+    "elegantTag": "Discretion and refinement",
+    "bold": "Bright & Bold",
+    "boldTag": "Radiance and character",
+    "cta": "SHOP NOW"
+  },
+  "type": {
+    "title": "What jewelry are you looking for?",
+    "cta": "VIEW ALL"
+  },
+  "deal": {
+    "title": "EARRINGS SALE!",
+    "subtitle": "Up to -25% on a selection of earrings",
+    "cta": "Grab it now",
+    "endsSoon": "Limited time offer"
+  },
+  "blog": {
+    "eyebrow": "The ORAYA journal",
+    "title": "Blog",
+    "readMore": "Discover",
+    "cards": [
+      { "title": "Caring for your jewelry", "text": "Keep your pieces shining every day", "slug": "entretien" },
+      { "title": "Our gift box", "text": "Every jewel travels in its signature case", "slug": "a-propos" },
+      { "title": "Gift guide", "text": "Find the perfect piece to give", "slug": "guide-cadeaux" },
+      { "title": "Style tips", "text": "Layer, mix, dare", "slug": "astuces-style" }
+    ]
+  },
+  "customSection": {
+    "eyebrow": "Custom jewelry",
+    "title": "Create your unique jewel",
+    "text": "Name pendant, keepsake photo or engraved bracelet: give — or treat yourself to — a piece like no other. Our workshop handcrafts every order with care.",
+    "cta": "Request a quote",
+    "steps": [
+      { "title": "Choose", "text": "The type of jewel to customize" },
+      { "title": "Personalize", "text": "Name, photo or engraved message" },
+      { "title": "Receive", "text": "Delivered in its ORAYA case" }
+    ]
+  },
+  "visit": {
+    "eyebrow": "Showroom & delivery",
+    "title": "Visit us",
+    "deliveryTitle": "Delivery everywhere in Abidjan",
+    "deliveryText": "Order before 3pm and receive your jewelry within 24 to 48h, anywhere in Côte d'Ivoire.",
+    "zonesTitle": "Areas served",
+    "zones": [
+      "All Abidjan communes — 24 to 48h",
+      "Rest of Côte d'Ivoire — 2 to 5 days",
+      "International — on request"
+    ],
+    "hoursTitle": "Opening hours",
+    "mapTitle": "Map — Abidjan"
+  },
+  "footer": {
+    "shopTitle": "OUR STORE",
+    "serviceTitle": "CUSTOMER SERVICE",
+    "infoTitle": "INFORMATION",
+    "followUs": "Follow us",
+    "payments": "Payment methods",
+    "callWhatsapp": "Call / WhatsApp",
+    "hours": "Opening hours",
+    "copyright": "© 2026 ORAYA Maison. All rights reserved.",
+    "address": "ORAYA Maison Showroom — Cocody, Abidjan, Côte d'Ivoire",
+    "weekdays": "Mon – Sat: 9am – 7pm",
+    "weekend": "Sunday: Closed",
+    "service": {
+      "about": "About",
+      "shipping": "Shipping & payment",
+      "payments": "Payment options",
+      "terms": "Terms & conditions",
+      "privacy": "Privacy policy"
+    },
+    "info": {
+      "care": "Jewelry care",
+      "sizeGuide": "Ring size chart",
+      "types": "Types of jewelry"
+    }
+  },
+  "shop": {
+    "title": "Shop",
+    "filters": "Filters",
+    "category": "Category",
+    "material": "Material",
+    "price": "Price",
+    "sort": "Sort by",
+    "sortNew": "New arrivals",
+    "sortPriceAsc": "Price: low to high",
+    "sortPriceDesc": "Price: high to low",
+    "sortPopular": "Popularity",
+    "results": "{count} pieces",
+    "clear": "Clear filters",
+    "empty": "No jewelry matches these filters.",
+    "emptyCta": "View the whole shop",
+    "priceAny": "Any price",
+    "price1": "Under 10,000 FCFA",
+    "price2": "10,000 – 25,000 FCFA",
+    "price3": "25,000 – 50,000 FCFA",
+    "price4": "Over 50,000 FCFA",
+    "breadcrumbHome": "Home",
+    "newTitle": "New arrivals",
+    "bestsellersTitle": "Best-sellers",
+    "materialTitle": "Real gold",
+    "menTitle": "Men's jewelry",
+    "customTitle": "Custom jewelry",
+    "promoTitle": "Earrings sale",
+    "allProductsTitle": "All jewelry",
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page {page} of {total}"
+  },
+  "product": {
+    "youMayLike": "You may also like",
+    "detailsTitle": "Jewel details",
+    "packaging": "ORAYA luxury packaging",
+    "packagingText": "Every jewel is delivered in its ORAYA case, with its protective pouch and certificate card.",
+    "reviews": "{count} reviews",
+    "addToCart": "ADD TO CART",
+    "orderWhatsapp": "Order on WhatsApp",
+    "size": "Size",
+    "color": "Color",
+    "length": "Chain length",
+    "materialLabel": "Material",
+    "chooseSize": "Choose a size",
+    "zoomHint": "Hover the image to zoom",
+    "notFound": "Jewel not found.",
+    "backToShop": "Back to shop",
+    "guarantees": [
+      { "title": "Free delivery", "text": "From 50,000 FCFA in Abidjan" },
+      { "title": "7-day exchange", "text": "Wrong size or color? We've got you" },
+      { "title": "ORAYA warranty", "text": "1-year anti-tarnish" },
+      { "title": "24–48h delivery", "text": "Everywhere in Abidjan" }
+    ],
+    "featureIcons": [
+      { "title": "Premium quality" },
+      { "title": "1-year warranty" },
+      { "title": "Easy exchange" },
+      { "title": "Fast delivery" },
+      { "title": "Gift packaging" }
+    ],
+    "customFields": {
+      "name": "Name or word to engrave",
+      "namePlaceholder": "E.g. Awa",
+      "font": "Font",
+      "fonts": {
+        "script": "Script (cursive)",
+        "serif": "Serif (elegant)",
+        "sans": "Sans (modern)"
+      },
+      "finish": "Finish",
+      "finishGold": "Gold",
+      "finishSilver": "Silver",
+      "engraving": "Message to engrave",
+      "engravingPlaceholder": "E.g. Forever yours",
+      "photo": "Pendant photo",
+      "photoHint": "Once your order is placed, send us the photo on WhatsApp — we take care of the rest."
+    }
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "emptyText": "Discover our jewelry and let yourself shine.",
+    "emptyCta": "Discover the shop",
+    "item": "item",
+    "items": "items",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "shippingCalc": "Calculated at the next step",
+    "freeShipping": "Free shipping",
+    "total": "Total",
+    "checkout": "Checkout",
+    "continue": "Continue shopping",
+    "freeShippingProgress": "Only {amount} away from free shipping",
+    "freeShippingReached": "Great, shipping is on us!",
+    "options": "Options",
+    "removeTitle": "Remove from cart"
+  },
+  "checkout": {
+    "title": "Complete my order",
+    "summary": "Summary",
+    "contact": "Your details",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "E.g. Aya Koné",
+    "phone": "Phone / WhatsApp",
+    "phonePlaceholder": "E.g. 07 00 00 00 00",
+    "zone": "Delivery area",
+    "zoneAbidjan": "Abidjan (communes)",
+    "zoneInterior": "Inside Côte d'Ivoire",
+    "zoneInternational": "International",
+    "commune": "Commune",
+    "communePlaceholder": "Choose your commune",
+    "neighborhood": "Neighborhood / landmark",
+    "neighborhoodPlaceholder": "E.g. Riviera 2, near the pharmacy",
+    "notes": "Notes (optional)",
+    "notesPlaceholder": "Delivery instructions, gift message…",
+    "payment": "Payment method",
+    "payments": {
+      "wave": "Wave",
+      "orange": "Orange Money",
+      "mtn": "MTN MoMo",
+      "moov": "Moov Money",
+      "card": "Visa / Mastercard",
+      "cod": "Cash on delivery (Abidjan)"
+    },
+    "payHintCod": "Pay in cash when you receive your parcel.",
+    "payHintWave": "You will receive a Wave payment request after confirmation.",
+    "payHintOm": "You will receive an Orange Money code after confirmation.",
+    "payHintCard": "Secure 3D Secure payment.",
+    "placeOrder": "Place the order",
+    "whatsappOrder": "Order via WhatsApp",
+    "whatsappHint": "Send your summary to our team — confirmation within minutes.",
+    "success": "Thank you for your order!",
+    "successText": "Your order {ref} has been registered. Our team will contact you on WhatsApp to confirm it.",
+    "successWhatsapp": "Send my order on WhatsApp",
+    "backHome": "Back to home",
+    "required": "Please fill in your name, phone number and commune.",
+    "orderRefLabel": "Order"
+  },
+  "personnaliser": {
+    "eyebrow": "ORAYA workshop",
+    "title": "Custom jewelry",
+    "subtitle": "Your name, your photo, your story — worn as jewelry.",
+    "howTitle": "How does it work?",
+    "cta": "Customize this jewel",
+    "quote": "Request a quote",
+    "items": {
+      "prenom": {
+        "title": "Name pendant",
+        "text": "Your name — or a loved one's — shaped in golden letters."
+      },
+      "photo": {
+        "title": "Photo pendant",
+        "text": "A precious memory, kept close to the heart in a golden locket."
+      },
+      "grave": {
+        "title": "Engraved bracelet",
+        "text": "A date, a promise, a sweet word: engraved forever."
+      }
+    },
+    "steps": [
+      { "title": "Choose", "text": "The jewel and its finish, gold or silver" },
+      { "title": "Personalize", "text": "Name, photo or message to engrave" },
+      { "title": "Receive", "text": "Delivered in 48–72h in its ORAYA case" }
+    ]
+  },
+  "info": {
+    "a-propos": {
+      "title": "About ORAYA Maison",
+      "intro": "Born in Abidjan, ORAYA Maison celebrates the radiance of Ivorian women — and all women who love to shine, gracefully.",
+      "sections": [
+        {
+          "h": "Our story",
+          "p": [
+            "ORAYA Maison was born from a simple belief: every woman deserves jewelry worthy of her radiance, with no compromise on quality or price.",
+            "From Abidjan, we select every piece with rigor: 18k gold plated, 925 silver, stainless steel — durable, tarnish-resistant materials designed for a tropical climate."
+          ]
+        },
+        {
+          "h": "Our promise",
+          "p": [
+            "Jewelry you can wear every day without taking off, delivered within 24 to 48h across Abidjan, in a case worthy of a gift — even when you're the one treating yourself.",
+            "And because every story is unique, our workshop also creates custom jewelry: name pendants, photo lockets and engraved bracelets."
+          ]
+        },
+        {
+          "h": "The ORAYA case",
+          "p": [
+            "Every order arrives in our signature case: an emerald green box trimmed with a gold ribbon, a protective pouch and a certificate card. Ready to give, ready to move."
+          ]
+        }
+      ]
+    },
+    "livraison-paiement": {
+      "title": "Shipping & payment",
+      "intro": "Fast delivery in Abidjan and across Côte d'Ivoire, payment by mobile money, card or cash on delivery.",
+      "sections": [
+        {
+          "h": "Times and areas",
+          "p": [
+            "Abidjan (all communes): 24 to 48 business hours — free shipping from 50,000 FCFA, otherwise 1,000 FCFA.",
+            "Inside the country: 2 to 5 days — 2,500 FCFA. International: on request via WhatsApp."
+          ]
+        },
+        {
+          "h": "Payment methods",
+          "p": [
+            "Wave, Orange Money, MTN MoMo, Moov Money, Visa/Mastercard — or cash on delivery within Abidjan.",
+            "You receive a payment request on your phone as soon as your order is confirmed."
+          ]
+        },
+        {
+          "h": "Order tracking",
+          "p": [
+            "At every step, our team keeps you informed on WhatsApp: confirmation, preparation, handover to the courier, delivery."
+          ]
+        }
+      ]
+    },
+    "cgv": {
+      "title": "Terms & conditions",
+      "intro": "These terms govern sales made on the ORAYA Maison website.",
+      "sections": [
+        {
+          "h": "1. Orders",
+          "p": [
+            "Every order placed on orayamaison.ci is confirmed by WhatsApp or phone. The order becomes final once payment (or cash-on-delivery agreement) is validated."
+          ]
+        },
+        {
+          "h": "2. Prices and payments",
+          "p": [
+            "Prices are shown in CFA francs (XOF), all taxes included. EUR and USD conversions are provided for guidance only.",
+            "Payments are accepted via Wave, Orange Money, MTN MoMo, Moov Money, Visa/Mastercard, or cash on delivery within Abidjan."
+          ]
+        },
+        {
+          "h": "3. Delivery",
+          "p": [
+            "The announced times (24–48h in Abidjan) run from order confirmation. A delivery delay cannot give rise to cancellation or compensation beyond refunds provided for by Ivorian law."
+          ]
+        },
+        {
+          "h": "4. Exchanges and returns",
+          "p": [
+            "You have 7 days after receipt to request an exchange of a non-customized jewel, in its original case and unworn.",
+            "Custom jewelry (name, photo, engraving) is excluded from the exchange policy, except for manufacturing defects."
+          ]
+        },
+        {
+          "h": "5. Warranty",
+          "p": [
+            "Our jewelry is guaranteed for 1 year against manufacturing defects and abnormal tarnishing, excluding normal wear, shocks and exposure to sea water or chemicals."
+          ]
+        }
+      ]
+    },
+    "confidentialite": {
+      "title": "Privacy policy",
+      "intro": "Your data belongs to you. We protect it and use it solely to process your orders.",
+      "sections": [
+        {
+          "h": "Data collected",
+          "p": [
+            "Name, phone number, delivery address and order history — only what is necessary to deliver and serve you."
+          ]
+        },
+        {
+          "h": "Use",
+          "p": [
+            "Your data is used to process your orders, keep you informed of their tracking and, with your consent, share our news on WhatsApp.",
+            "We do not sell or transfer your data to third parties for commercial purposes."
+          ]
+        },
+        {
+          "h": "Your rights",
+          "p": [
+            "You may request access, correction or deletion of your data at any time by writing to us on WhatsApp or by email."
+          ]
+        }
+      ]
+    },
+    "entretien": {
+      "title": "Jewelry care",
+      "intro": "A few simple steps to keep your ORAYA jewelry shining, year after year.",
+      "sections": [
+        {
+          "h": "Everyday",
+          "p": [
+            "Last thing in the morning, first thing at night: remove your jewelry before showering, swimming or working out.",
+            "Avoid contact with perfumes, creams and household products — put your jewelry on after your beauty routine."
+          ]
+        },
+        {
+          "h": "Cleaning",
+          "p": [
+            "Once a month, let your pieces soak for a few minutes in warm soapy water, brush gently with a soft toothbrush, rinse and dry with a microfiber cloth.",
+            "To revive the shine of gold-plated pieces, rub gently with a gold polishing cloth."
+          ]
+        },
+        {
+          "h": "Storage",
+          "p": [
+            "Store each piece in its ORAYA pouch, away from humidity and direct light.",
+            "Separate your jewelry to avoid scratches: chains tangle, stones chip."
+          ]
+        }
+      ]
+    },
+    "guide-tailles": {
+      "title": "Ring size chart",
+      "intro": "Find your size in three minutes, without leaving home.",
+      "tableTitle": "Size chart",
+      "table": {
+        "size": "Size",
+        "circumference": "Circumference (mm)",
+        "diameter": "Diameter (mm)"
+      },
+      "howTitle": "How to measure?",
+      "how": [
+        "Wrap a strip of paper or string around the base of your finger.",
+        "Mark where the strip crosses, then measure the length in millimeters: that's your circumference.",
+        "Match it in the table below to find your ORAYA size.",
+        "Between two sizes? Choose the larger one, especially for a wide band."
+      ],
+      "tipsTitle": "Our tips",
+      "tips": [
+        "Measure your fingers at the end of the day, when they are slightly swollen.",
+        "Fingers change with heat: avoid measuring cold hands.",
+        "For a surprise gift, discreetly borrow an existing ring and measure its inner diameter."
+      ]
+    },
+    "guide-cadeaux": {
+      "title": "Gift guide",
+      "intro": "The perfect jewel exists — here's how to find it for the one you love.",
+      "sections": [
+        {
+          "h": "Observe their style",
+          "p": [
+            "Does she wear discreet pieces or statement jewelry? Gold or silver? Take note: that's your first compass.",
+            "In doubt, fine gold chains and classic pendants are safe bets."
+          ]
+        },
+        {
+          "h": "By occasion",
+          "p": [
+            "Birthday: her custom name pendant. Declaration: a heart or a star. Wedding: the necklace-and-earrings set.",
+            "Christmas or Mother's Day: our emerald green case always makes an impression."
+          ]
+        },
+        {
+          "h": "A reassuring budget",
+          "p": [
+            "Under 15,000 FCFA: delicate rings and pendants. Around 25,000 FCFA: signature necklaces and bracelets. Over 50,000 FCFA: sets and custom jewelry — with free shipping."
+          ]
+        }
+      ]
+    },
+    "astuces-style": {
+      "title": "Style tips",
+      "intro": "Layer, mix, dare: our stylist tips to compose your jewelry looks.",
+      "sections": [
+        {
+          "h": "Layering necklaces",
+          "p": [
+            "The golden rule: three different lengths (40, 45 and 50 cm) in one color family — all gold or all silver.",
+            "Mix weights: a fine chain, a curb chain, a statement pendant. The eye loves contrast."
+          ]
+        },
+        {
+          "h": "Stacking rings",
+          "p": [
+            "On the same hand, play with placement: a thin ring on each phalanx, a more structured signet as punctuation.",
+            "Stay in one consistent finish and remember: fewer rings at the office in the morning, all of them at night."
+          ]
+        },
+        {
+          "h": "Earrings",
+          "p": [
+            "Turtleneck or updo: hoops and drop earrings reveal the neckline.",
+            "With a plunging neckline, prefer discreet studs to avoid overloading the silhouette."
+          ]
+        }
+      ]
+    },
+    "types-bijoux": {
+      "title": "Types of jewelry",
+      "intro": "Necklace, pendant, set? A small glossary to choose wisely.",
+      "sections": [
+        {
+          "h": "Necklaces and pendants",
+          "p": [
+            "The necklace is the chain; the pendant is the piece hanging from it. Choker (40 cm), princess (45 cm) or sautoir (over 70 cm): length changes everything."
+          ]
+        },
+        {
+          "h": "Rings",
+          "p": [
+            "Thin band, solitaire, signet or charm ring: the shape structures the hand. ORAYA sizes range from 48 to 60."
+          ]
+        },
+        {
+          "h": "Bracelets",
+          "p": [
+            "Bangle, chain, cord or cuff: the bracelet punctuates the wrist. Stack without moderation."
+          ]
+        },
+        {
+          "h": "Earrings",
+          "p": [
+            "Studs, hoops, drops or magnetic sleepers: enough to vary from office to evening."
+          ]
+        },
+        {
+          "h": "Jewelry sets",
+          "p": [
+            "The necklace + earrings combination (sometimes a bracelet): the assured option for big occasions and exceptional gifts."
+          ]
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "A question, a piece of advice, a custom order? Our team answers 7 days a week on WhatsApp.",
+    "form": "Write to us",
+    "name": "Your name",
+    "namePlaceholder": "E.g. Aya Koné",
+    "message": "Your message",
+    "messagePlaceholder": "Hello ORAYA, I would like…",
+    "send": "Send on WhatsApp",
+    "sendToast": "WhatsApp opens with your message — just click Send!",
+    "whatsappCta": "Chat now",
+    "showroom": "Our showroom",
+    "callUs": "Call us / WhatsApp",
+    "writeUs": "Write to us",
+    "followUs": "Follow us",
+    "mapTitle": "Map — Abidjan"
+  },
+  "common": {
+    "close": "Close",
+    "menu": "Menu",
+    "back": "Back",
+    "home": "Home",
+    "viewAll": "VIEW ALL",
+    "addToCartShort": "Add to cart",
+    "loading": "Loading…",
+    "results": "results",
+    "new": "New",
+    "bestseller": "Best-seller",
+    "promo": "Sale",
+    "quantity": "Quantity",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "continueShopping": "Continue shopping",
+    "oldPrice": "Original price"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has been moved.",
+    "cta": "Back to home"
+  }
+}

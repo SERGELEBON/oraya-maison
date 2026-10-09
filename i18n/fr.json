@@ -1,0 +1,673 @@
+{
+  "meta": {
+    "title": "ORAYA Maison – Bijoux en ligne à Abidjan, Côte d'Ivoire",
+    "description": "Des bijoux qui racontent votre éclat. Colliers, bagues, bracelets, boucles d'oreilles et bijoux personnalisés, livrés en 24–48h à Abidjan."
+  },
+  "topbar": {
+    "promo": "-15% sur votre première commande",
+    "currency": "Devise",
+    "language": "Langue"
+  },
+  "currencies": {
+    "XOF": "FCFA",
+    "EUR": "EUR",
+    "USD": "USD"
+  },
+  "languages": {
+    "fr": "🇫🇷 Français",
+    "en": "🇬🇧 English"
+  },
+  "nav": {
+    "shop": "Boutique",
+    "new": "Nouveautés",
+    "bestsellers": "Best-sellers",
+    "realGold": "Or véritable",
+    "customize": "Personnaliser",
+    "cart": "Panier",
+    "account": "Mon compte",
+    "openMenu": "Ouvrir le menu",
+    "emptyCart": "Votre panier est vide.",
+    "viewCart": "Voir le panier",
+    "checkout": "Commander",
+    "addedToCart": "Ajouté au panier ✓",
+    "loginTitle": "Espace cliente",
+    "loginIntro": "Connectez-vous pour suivre vos commandes et retrouver vos coups de cœur.",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "signIn": "Se connecter",
+    "noAccount": "Pas encore de compte ?",
+    "createAccount": "Créer un compte",
+    "accountSoon": "L'espace client arrive très bientôt. En attendant, suivez votre commande directement sur WhatsApp."
+  },
+  "mega": {
+    "byType": "PAR TYPE",
+    "byMaterial": "PAR MATIÈRE",
+    "collections": "COLLECTIONS",
+    "men": "Pour homme",
+    "customJewelry": "Bijoux personnalisés",
+    "viewAllShop": "Voir toute la boutique",
+    "promoCustomTitle": "Bijoux personnalisés",
+    "promoCustomText": "Votre prénom, votre photo, votre histoire.",
+    "promoCustomCta": "Découvrir",
+    "promoLookTitle": "Nouvelle collection",
+    "promoLookText": "Les pièces les plus convoitées de la saison.",
+    "promoLookCta": "Acheter"
+  },
+  "categories": {
+    "all": "Tous les bijoux",
+    "bagues": "Bagues",
+    "colliers": "Colliers",
+    "pendentifs": "Pendentifs",
+    "bracelets": "Bracelets",
+    "boucles-oreilles": "Boucles d'oreilles",
+    "parures": "Parures",
+    "montres": "Montres"
+  },
+  "materials": {
+    "acier-inoxydable": "Acier inoxydable",
+    "plaque-or": "Plaqué or",
+    "argent-925": "Argent 925",
+    "or-veritable": "Or véritable"
+  },
+  "customTypes": {
+    "prenom": "Pendentif prénom",
+    "photo": "Pendantif photo",
+    "grave": "Bracelet gravé"
+  },
+  "colorNames": {
+    "or": "Or",
+    "argent": "Argent",
+    "or-rose": "Or rose"
+  },
+  "badge": {
+    "new": "Nouveau",
+    "bestseller": "Best-seller",
+    "promo": "Promo",
+    "homme": "Homme"
+  },
+  "whatsapp": {
+    "fabLabel": "Discuter sur WhatsApp",
+    "orderMessage": "Bonjour ORAYA Maison, je souhaite commander.",
+    "quoteMessage": "Bonjour ORAYA Maison, je souhaite un devis pour un bijou personnalisé.",
+    "productMessage": "Bonjour ORAYA Maison, je souhaite commander : {name} ({price}).",
+    "orderIntro": "Bonjour ORAYA Maison, voici ma commande :",
+    "orderRef": "Commande n° {ref}",
+    "orderCustomer": "Nom : {name}",
+    "orderPhone": "Téléphone : {phone}",
+    "orderZone": "Livraison : {zone}",
+    "orderPayment": "Paiement : {payment}",
+    "orderTotal": "TOTAL : {total}"
+  },
+  "hero": {
+    "title": "L'éclat qui vous ressemble, livré à Abidjan",
+    "subtitle": "Faites le choix ORAYA",
+    "cta": "Découvrir la boutique",
+    "alt": "Égérie ORAYA portant un collier doré et des bagues"
+  },
+  "features": [
+    { "title": "Qualité premium", "text": "Des matières sélectionnées avec soin" },
+    { "title": "Clientes satisfaites", "text": "Plus de 2 000 clientes nous font confiance" },
+    { "title": "Service WhatsApp 7j/7", "text": "Une équipe à votre écoute" },
+    { "title": "Échange facile", "text": "Sous 7 jours, sans stress" },
+    { "title": "Livraison rapide", "text": "24–48h partout à Abidjan" }
+  ],
+  "ambassadors": {
+    "eyebrow": "Nos ambassadrices",
+    "title": "Elles portent ORAYA",
+    "list": [
+      { "name": "Aïcha", "wears": "Boucles Aurore" },
+      { "name": "Mariam", "wears": "Collier Reine" },
+      { "name": "Akissi", "wears": "Pendentif Luna" },
+      { "name": "Grâce", "wears": "Colliers Étoile" },
+      { "name": "Saly", "wears": "Bracelet Nova" }
+    ]
+  },
+  "collection": {
+    "eyebrow": "Just in",
+    "title": "Nouvelle collection",
+    "viewTrends": "VOIR LES TENDANCES",
+    "viewAll": "VOIR TOUT"
+  },
+  "look": {
+    "title": "Quel style êtes-vous ? Élégant ou audacieux ?",
+    "elegant": "Simple & Élégant",
+    "elegantTag": "Discrétion et raffinement",
+    "bold": "Brillant & Audacieux",
+    "boldTag": "Éclat et caractère",
+    "cta": "ACHETER"
+  },
+  "type": {
+    "title": "Quel bijou recherchez-vous ?",
+    "cta": "VOIR TOUT"
+  },
+  "deal": {
+    "title": "PROMO BOUCLES D'OREILLES !",
+    "subtitle": "Jusqu'à -25% sur une sélection de boucles d'oreilles",
+    "cta": "J'en profite",
+    "endsSoon": "Offre à durée limitée"
+  },
+  "blog": {
+    "eyebrow": "Le journal ORAYA",
+    "title": "Blog",
+    "readMore": "Découvrir",
+    "cards": [
+      { "title": "Entretien de vos bijoux", "text": "Gardez l'éclat de vos pièces au quotidien", "slug": "entretien" },
+      { "title": "Notre écrin cadeau", "text": "Chaque bijou voyage dans son écrin signature", "slug": "a-propos" },
+      { "title": "Guide cadeaux", "text": "Trouver le bijou parfait à offrir", "slug": "guide-cadeaux" },
+      { "title": "Astuces style", "text": "Superposer, associer, oser", "slug": "astuces-style" }
+    ]
+  },
+  "customSection": {
+    "eyebrow": "Bijoux personnalisés",
+    "title": "Créez votre bijou unique",
+    "text": "Pendentif prénom, photo souvenir ou bracelet gravé : offrez — ou offrez-vous — une pièce qui ne ressemble qu'à vous. Notre atelier réalise chaque commande à la main, avec soin.",
+    "cta": "Demander un devis",
+    "steps": [
+      { "title": "Choisissez", "text": "Le type de bijou à personnaliser" },
+      { "title": "Personnalisez", "text": "Prénom, photo ou message gravé" },
+      { "title": "Recevez", "text": "Livré dans son écrin ORAYA" }
+    ]
+  },
+  "visit": {
+    "eyebrow": "Showroom & livraison",
+    "title": "Visitez-nous",
+    "deliveryTitle": "Livraison partout à Abidjan",
+    "deliveryText": "Commandez avant 15h et recevez votre bijou en 24 à 48h, partout en Côte d'Ivoire.",
+    "zonesTitle": "Zones desservies",
+    "zones": [
+      "Toutes les communes d'Abidjan — 24 à 48h",
+      "Reste de la Côte d'Ivoire — 2 à 5 jours",
+      "International — sur devis"
+    ],
+    "hoursTitle": "Horaires",
+    "mapTitle": "Carte — Abidjan"
+  },
+  "footer": {
+    "shopTitle": "NOTRE BOUTIQUE",
+    "serviceTitle": "SERVICE CLIENT",
+    "infoTitle": "INFORMATIONS",
+    "followUs": "Suivez-nous",
+    "payments": "Moyens de paiement",
+    "callWhatsapp": "Appel / WhatsApp",
+    "hours": "Horaires",
+    "copyright": "© 2026 ORAYA Maison. Tous droits réservés.",
+    "address": "Showroom ORAYA Maison — Cocody, Abidjan, Côte d'Ivoire",
+    "weekdays": "Lun – Sam : 9h – 19h",
+    "weekend": "Dimanche : Fermé",
+    "service": {
+      "about": "À propos",
+      "shipping": "Livraison & paiement",
+      "payments": "Moyens de paiement",
+      "terms": "CGV",
+      "privacy": "Confidentialité"
+    },
+    "info": {
+      "care": "Entretien des bijoux",
+      "sizeGuide": "Guide des tailles de bague",
+      "types": "Types de bijoux"
+    }
+  },
+  "shop": {
+    "title": "Boutique",
+    "filters": "Filtres",
+    "category": "Catégorie",
+    "material": "Matière",
+    "price": "Prix",
+    "sort": "Trier par",
+    "sortNew": "Nouveautés",
+    "sortPriceAsc": "Prix croissant",
+    "sortPriceDesc": "Prix décroissant",
+    "sortPopular": "Popularité",
+    "results": "{count} bijoux",
+    "clear": "Effacer les filtres",
+    "empty": "Aucun bijou ne correspond à ces filtres.",
+    "emptyCta": "Voir toute la boutique",
+    "priceAny": "Tous les prix",
+    "price1": "Moins de 10 000 FCFA",
+    "price2": "10 000 – 25 000 FCFA",
+    "price3": "25 000 – 50 000 FCFA",
+    "price4": "Plus de 50 000 FCFA",
+    "breadcrumbHome": "Accueil",
+    "newTitle": "Nouveautés",
+    "bestsellersTitle": "Best-sellers",
+    "materialTitle": "Or véritable",
+    "menTitle": "Bijoux pour homme",
+    "customTitle": "Bijoux personnalisés",
+    "promoTitle": "Promo boucles d'oreilles",
+    "allProductsTitle": "Tous les bijoux",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "page": "Page {page} / {total}"
+  },
+  "product": {
+    "youMayLike": "Vous aimerez aussi",
+    "detailsTitle": "Détails du bijou",
+    "packaging": "Emballage luxe ORAYA",
+    "packagingText": "Chaque bijou est livré dans son écrin ORAYA, avec sa pochette protectrice et sa carte de certificat.",
+    "reviews": "{count} avis",
+    "addToCart": "AJOUTER AU PANIER",
+    "orderWhatsapp": "Commander sur WhatsApp",
+    "size": "Taille",
+    "color": "Couleur",
+    "length": "Longueur de chaîne",
+    "materialLabel": "Matière",
+    "chooseSize": "Choisissez une taille",
+    "zoomHint": "Survolez l'image pour zoomer",
+    "notFound": "Bijou introuvable.",
+    "backToShop": "Retour à la boutique",
+    "guarantees": [
+      { "title": "Livraison offerte", "text": "Dès 50 000 FCFA à Abidjan" },
+      { "title": "Échange 7 jours", "text": "Taille ou couleur à changer ? On s'en occupe" },
+      { "title": "Garantie ORAYA", "text": "Anti-ternissement 1 an" },
+      { "title": "Livraison 24–48h", "text": "Partout à Abidjan" }
+    ],
+    "featureIcons": [
+      { "title": "Qualité premium" },
+      { "title": "Garantie 1 an" },
+      { "title": "Échange facile" },
+      { "title": "Livraison rapide" },
+      { "title": "Emballage cadeau" }
+    ],
+    "customFields": {
+      "name": "Prénom ou mot à graver",
+      "namePlaceholder": "Ex. : Awa",
+      "font": "Police d'écriture",
+      "fonts": {
+        "script": "Script (cursif)",
+        "serif": "Serif (élégant)",
+        "sans": "Sans (moderne)"
+      },
+      "finish": "Finition",
+      "finishGold": "Or",
+      "finishSilver": "Argent",
+      "engraving": "Message à graver",
+      "engravingPlaceholder": "Ex. : À toi toujours",
+      "photo": "Photo du pendentif",
+      "photoHint": "Passerez votre commande ? Envoyez-nous la photo sur WhatsApp, on s'occupe du reste."
+    }
+  },
+  "cart": {
+    "title": "Votre panier",
+    "empty": "Votre panier est vide.",
+    "emptyText": "Découvrez nos bijoux et laissez-vous briller.",
+    "emptyCta": "Découvrir la boutique",
+    "item": "article",
+    "items": "articles",
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "shippingCalc": "Calculée à l'étape suivante",
+    "freeShipping": "Livraison offerte",
+    "total": "Total",
+    "checkout": "Commander",
+    "continue": "Continuer mes achats",
+    "freeShippingProgress": "Plus que {amount} pour la livraison offerte",
+    "freeShippingReached": "Bravo, la livraison vous est offerte !",
+    "options": "Options",
+    "removeTitle": "Retirer du panier"
+  },
+  "checkout": {
+    "title": "Finaliser ma commande",
+    "summary": "Récapitulatif",
+    "contact": "Vos coordonnées",
+    "fullName": "Nom complet",
+    "fullNamePlaceholder": "Ex. : Aya Koné",
+    "phone": "Téléphone / WhatsApp",
+    "phonePlaceholder": "Ex. : 07 00 00 00 00",
+    "zone": "Zone de livraison",
+    "zoneAbidjan": "Abidjan (communes)",
+    "zoneInterior": "Intérieur de la Côte d'Ivoire",
+    "zoneInternational": "International",
+    "commune": "Commune",
+    "communePlaceholder": "Choisissez votre commune",
+    "neighborhood": "Quartier / point de repère",
+    "neighborhoodPlaceholder": "Ex. : Riviera 2, près de la pharmacie",
+    "notes": "Notes (optionnel)",
+    "notesPlaceholder": "Instructions de livraison, message cadeau…",
+    "payment": "Mode de paiement",
+    "payments": {
+      "wave": "Wave",
+      "orange": "Orange Money",
+      "mtn": "MTN MoMo",
+      "moov": "Moov Money",
+      "card": "Visa / Mastercard",
+      "cod": "Paiement à la livraison (Abidjan)"
+    },
+    "payHintCod": "Payez en espèces à la réception de votre colis.",
+    "payHintWave": "Vous recevrez une demande de paiement Wave après confirmation.",
+    "payHintOm": "Vous recevrez un code Orange Money après confirmation.",
+    "payHintCard": "Paiement sécurisé 3D Secure.",
+    "placeOrder": "Passer la commande",
+    "whatsappOrder": "Commander via WhatsApp",
+    "whatsappHint": "Envoyez votre récapitulatif à notre équipe — confirmation en quelques minutes.",
+    "success": "Merci pour votre commande !",
+    "successText": "Votre commande {ref} a bien été enregistrée. Notre équipe vous contacte sur WhatsApp pour la confirmer.",
+    "successWhatsapp": "Envoyer ma commande sur WhatsApp",
+    "backHome": "Retour à l'accueil",
+    "required": "Merci de renseigner votre nom, votre téléphone et votre commune.",
+    "orderRefLabel": "Commande"
+  },
+  "personnaliser": {
+    "eyebrow": "Atelier ORAYA",
+    "title": "Bijoux personnalisés",
+    "subtitle": "Votre prénom, votre photo, votre histoire — portés en bijou.",
+    "howTitle": "Comment ça marche ?",
+    "cta": "Personnaliser ce bijou",
+    "quote": "Demander un devis",
+    "items": {
+      "prenom": {
+        "title": "Pendentif prénom",
+        "text": "Votre prénom — ou celui d'une personne chère — façonné en lettres dorées."
+      },
+      "photo": {
+        "title": "Pendentif photo",
+        "text": "Un souvenir précieux, gardé près du cœur dans un médaillon doré."
+      },
+      "grave": {
+        "title": "Bracelet gravé",
+        "text": "Une date, une promesse, un mot doux : gravés pour toujours."
+      }
+    },
+    "steps": [
+      { "title": "Choisissez", "text": "Le bijou et sa finition, or ou argent" },
+      { "title": "Personnalisez", "text": "Prénom, photo ou message à graver" },
+      { "title": "Recevez", "text": "Livré en 48–72h dans son écrin ORAYA" }
+    ]
+  },
+  "info": {
+    "a-propos": {
+      "title": "À propos de ORAYA Maison",
+      "intro": "Née à Abidjan, ORAYA Maison célèbre l'éclat des femmes ivoiriennes — et de toutes celles qui aiment briller avec justesse.",
+      "sections": [
+        {
+          "h": "Notre histoire",
+          "p": [
+            "ORAYA Maison est née d'une conviction simple : chaque femme mérite des bijoux à la hauteur de son éclat, sans compromis sur la qualité ni sur le prix.",
+            "Depuis Abidjan, nous sélectionnons chaque pièce avec exigence : plaqué or 18 carats, argent 925, acier inoxydable — des matières durables, anti-ternissement, pensées pour le climat tropical."
+          ]
+        },
+        {
+          "h": "Notre promesse",
+          "p": [
+            "Des bijoux que vous portez tous les jours sans les quitter, livrés en 24 à 48h partout à Abidjan, dans un écrin digne d'un cadeau — même lorsque c'est vous qui vous l'offrez.",
+            "Et parce que chaque histoire est unique, notre atelier crée aussi des bijoux personnalisés : pendentifs prénom, médaillons photo et bracelets gravés."
+          ]
+        },
+        {
+          "h": "L'écrin ORAYA",
+          "p": [
+            "Chaque commande arrive dans notre écrin signature : une boîte vert émeraude rehaussée d'un ruban doré, une pochette protectrice et une carte de certificat. Prêt à offrir, prêt à émouvoir."
+          ]
+        }
+      ]
+    },
+    "livraison-paiement": {
+      "title": "Livraison & paiement",
+      "intro": "Livraison rapide à Abidjan et partout en Côte d'Ivoire, paiement par mobile money, carte ou à la livraison.",
+      "sections": [
+        {
+          "h": "Délais et zones",
+          "p": [
+            "Abidjan (toutes communes) : 24 à 48h ouvrées — livraison offerte dès 50 000 FCFA d'achat, sinon 1 000 FCFA.",
+            "Intérieur du pays : 2 à 5 jours — 2 500 FCFA. International : sur devis via WhatsApp."
+          ]
+        },
+        {
+          "h": "Moyens de paiement",
+          "p": [
+            "Wave, Orange Money, MTN MoMo, Moov Money, Visa/Mastercard — ou paiement en espèces à la livraison dans Abidjan.",
+            "Vous recevez une demande de paiement sur votre téléphone dès la confirmation de votre commande."
+          ]
+        },
+        {
+          "h": "Suivi de commande",
+          "p": [
+            "À chaque étape, notre équipe vous tient informée sur WhatsApp : confirmation, préparation, remise au livreur, livraison."
+          ]
+        }
+      ]
+    },
+    "cgv": {
+      "title": "Conditions générales de vente",
+      "intro": "Les présentes conditions encadrent les ventes réalisées sur le site ORAYA Maison.",
+      "sections": [
+        {
+          "h": "1. Commandes",
+          "p": [
+            "Toute commande passée sur orayamaison.ci fait l'objet d'une confirmation par WhatsApp ou téléphone. La commande est ferme une fois le paiement (ou l'accord de paiement à la livraison) validé."
+          ]
+        },
+        {
+          "h": "2. Prix et paiements",
+          "p": [
+            "Les prix sont indiqués en francs CFA (XOF), toutes taxes comprises. Les conversions en EUR et USD sont fournies à titre indicatif.",
+            "Les paiements sont acceptés via Wave, Orange Money, MTN MoMo, Moov Money, Visa/Mastercard, ou en espèces à la livraison dans Abidjan."
+          ]
+        },
+        {
+          "h": "3. Livraison",
+          "p": [
+            "Les délais annoncés (24–48h à Abidjan) courent à compter de la confirmation de la commande. Un retard de livraison ne peut donner lieu à annulation ou indemnisation au-delà des remboursements prévus par la loi ivoirienne."
+          ]
+        },
+        {
+          "h": "4. Échanges et retours",
+          "p": [
+            "Vous disposez de 7 jours après réception pour demander l'échange d'un bijou non personnalisé, dans son écrin d'origine et non porté.",
+            "Les bijoux personnalisés (prénom, photo, gravure) sont exclus du droit d'échange, sauf défaut de fabrication."
+          ]
+        },
+        {
+          "h": "5. Garantie",
+          "p": [
+            "Nos bijoux sont garantis 1 an contre les défauts de fabrication et le ternissement anormal, hors usure normale, chocs et exposition à l'eau de mer ou aux produits chimiques."
+          ]
+        }
+      ]
+    },
+    "confidentialite": {
+      "title": "Politique de confidentialité",
+      "intro": "Vos données vous appartiennent. Nous les protégeons et les utilisons uniquement pour traiter vos commandes.",
+      "sections": [
+        {
+          "h": "Données collectées",
+          "p": [
+            "Nom, numéro de téléphone, adresse de livraison et historique de commandes — uniquement ce qui est nécessaire pour vous livrer et vous servir."
+          ]
+        },
+        {
+          "h": "Utilisation",
+          "p": [
+            "Vos données servent à traiter vos commandes, vous informer de leur suivi et, si vous y consentez, vous faire part de nos nouveautés sur WhatsApp.",
+            "Nous ne vendons ni ne transmettons vos données à des tiers à des fins commerciales."
+          ]
+        },
+        {
+          "h": "Vos droits",
+          "p": [
+            "Vous pouvez demander à tout moment l'accès, la rectification ou la suppression de vos données en nous écrivant sur WhatsApp ou par e-mail."
+          ]
+        }
+      ]
+    },
+    "entretien": {
+      "title": "Entretien de vos bijoux",
+      "intro": "Quelques gestes simples pour que vos bijoux ORAYA gardent leur éclat, année après année.",
+      "sections": [
+        {
+          "h": "Au quotidien",
+          "p": [
+            "Dernier geste le matin, premier geste le soir : retirez vos bijoux avant la douche, la piscine ou le sport.",
+            "Évitez le contact avec les parfums, crèmes et produits ménagers — posez vos bijoux après votre routine beauté."
+          ]
+        },
+        {
+          "h": "Le nettoyage",
+          "p": [
+            "Une fois par mois, laissez tremper vos pièces quelques minutes dans de l'eau tiède savonneuse, brossez-les délicatement avec une brosse à dents souple, rincez et séchez avec un chiffon microfibre.",
+            "Pour raviver la brillance du plaqué or, frottez doucement avec un chiffon de polissage doré."
+          ]
+        },
+        {
+          "h": "Le rangement",
+          "p": [
+            "Rangez chaque pièce dans sa pochette ORAYA, à l'abri de l'humidité et de la lumière directe.",
+            "Séparez les bijoux pour éviter les rayures : les chaînes s'emmêlent, les pierres se craquent."
+          ]
+        }
+      ]
+    },
+    "guide-tailles": {
+      "title": "Guide des tailles de bague",
+      "intro": "Trouvez votre taille en trois minutes, sans bouger de chez vous.",
+      "tableTitle": "Tableau de correspondance",
+      "table": {
+        "size": "Taille",
+        "circumference": "Circonférence (mm)",
+        "diameter": "Diamètre (mm)"
+      },
+      "howTitle": "Comment mesurer ?",
+      "how": [
+        "Enroulez une bande de papier ou un fil autour de la base de votre doigt.",
+        "Marquez l'endroit où la bande se croise, puis mesurez la longueur en millimètres : c'est votre circonférence.",
+        "Reportez-la dans le tableau ci-dessous pour trouver votre taille ORAYA.",
+        "Entre deux tailles ? Choisissez la plus grande, surtout pour une bague large."
+      ],
+      "tipsTitle": "Nos conseils",
+      "tips": [
+        "Mesurez vos doigts en fin de journée, quand ils sont légèrement plus gonflés.",
+        "Vos doigts changent avec la chaleur : évitez de mesurer les mains froides.",
+        "Pour une bague offerte en surprise, empruntez discrètement une bague existante et mesurez son diamètre intérieur."
+      ]
+    },
+    "guide-cadeaux": {
+      "title": "Guide cadeaux",
+      "intro": "Le bijou parfait existe — voici comment le trouver pour celle (ou celui) que vous aimez.",
+      "sections": [
+        {
+          "h": "Observer son style",
+          "p": [
+            "Porte-t-elle des pièces discrètes ou des bijoux qui se remarquent ? Ses bijoux en or ou en argent ? Notez tout : c'est votre première boussole.",
+            "En cas de doute, les chaînes fines dorées et les pendentifs classiques sont des valeurs sûres."
+          ]
+        },
+        {
+          "h": "Selon l'occasion",
+          "p": [
+            "Anniversaire : son pendentif prénom personnalisé. Déclaration : un cœur ou une étoile. Mariage : la parure collier-boucles d'oreilles.",
+            "Noël ou fête des mères : notre écrin vert émeraude fait toujours son effet."
+          ]
+        },
+        {
+          "h": "Le budget qui rassure",
+          "p": [
+            "Moins de 15 000 FCFA : bagues et pendentifs délicats. Autour de 25 000 FCFA : colliers et bracelets signature. Plus de 50 000 FCFA : parures et bijoux personnalisés — livraison offerte."
+          ]
+        }
+      ]
+    },
+    "astuces-style": {
+      "title": "Astuces style",
+      "intro": "Superposer, associer, oser : nos astuces de styliste pour composer vos looks bijoux.",
+      "sections": [
+        {
+          "h": "Superposer les colliers",
+          "p": [
+            "La règle d'or : trois longueurs différentes (40, 45 et 50 cm) dans une même famille de couleurs — tout doré ou tout argenté.",
+            "Mélangez les grammages : une chaîne fine, un gourmette, un pendentif manifeste. L'œil adore le contraste."
+          ]
+        },
+        {
+          "h": "Accumuler les bagues",
+          "p": [
+            "Sur une même main, jouez les décalés : une bague fine à chaque phalange, une chevalière plus structurée en ponctuation.",
+            "Restez dans une finition cohérente et n'oubliez pas : peu de bagues le matin au bureau, toutes le soir en soirée."
+          ]
+        },
+        {
+          "h": "Les boucles d'oreilles",
+          "p": [
+            "Col roulé ou cheveux relevés : les créoles et les pendantes révèlent la ligne du cou.",
+            "Avec un décolleté plongeant, préférez des puces discrètes pour ne pas surcharger la silhouette."
+          ]
+        }
+      ]
+    },
+    "types-bijoux": {
+      "title": "Types de bijoux",
+      "intro": "Collier, pendentif, parure ? Un petit lexique pour choisir en connaissance de cause.",
+      "sections": [
+        {
+          "h": "Colliers et pendentifs",
+          "p": [
+            "Le collier désigne la chaîne ; le pendentif, la pièce qui s'y suspend. Ras-de-cou (40 cm), princesse (45 cm) ou sautoir (plus de 70 cm) : la longueur change tout."
+          ]
+        },
+        {
+          "h": "Bagues et alliances",
+          "p": [
+            "Bague fine, solitaire, chevalière ou à breloques : la forme structure la main. Les tailles ORAYA vont de 48 à 60."
+          ]
+        },
+        {
+          "h": "Bracelets",
+          "p": [
+            "Jonc, chaîne, cordon ou manchette : le bracelet ponctue le poignet. À superposer sans modération."
+          ]
+        },
+        {
+          "h": "Boucles d'oreilles",
+          "p": [
+            "Puces, créoles, pendantes ou sleepers magnétiques : de quoi varier du bureau à la soirée."
+          ]
+        },
+        {
+          "h": "Parures",
+          "p": [
+            "L'ensemble collier + boucles d'oreilles (parfois bracelet) : l'option assurée pour les grandes occasions et les cadeaux d'exception."
+          ]
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Une question, un conseil, une commande personnalisée ? Notre équipe vous répond 7j/7 sur WhatsApp.",
+    "form": "Écrivez-nous",
+    "name": "Votre nom",
+    "namePlaceholder": "Ex. : Aya Koné",
+    "message": "Votre message",
+    "messagePlaceholder": "Bonjour ORAYA, je souhaite…",
+    "send": "Envoyer sur WhatsApp",
+    "sendToast": "WhatsApp s'ouvre avec votre message — il ne reste qu'à cliquer sur Envoyer !",
+    "whatsappCta": "Discuter maintenant",
+    "showroom": "Notre showroom",
+    "callUs": "Appelez-nous / WhatsApp",
+    "writeUs": "Écrivez-nous",
+    "followUs": "Suivez-nous",
+    "mapTitle": "Carte — Abidjan"
+  },
+  "common": {
+    "close": "Fermer",
+    "menu": "Menu",
+    "back": "Retour",
+    "home": "Accueil",
+    "viewAll": "VOIR TOUT",
+    "addToCartShort": "Ajouter au panier",
+    "loading": "Chargement…",
+    "results": "résultats",
+    "new": "Nouveau",
+    "bestseller": "Best-seller",
+    "promo": "Promo",
+    "quantity": "Quantité",
+    "remove": "Retirer",
+    "subtotal": "Sous-total",
+    "total": "Total",
+    "continueShopping": "Continuer mes achats",
+    "oldPrice": "Prix initial"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "cta": "Retour à l'accueil"
+  }
+}
