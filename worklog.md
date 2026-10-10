@@ -215,3 +215,28 @@ Work Log:
 Stage Summary:
 - Hero is now a full-bleed image backdrop at 30% opacity over emerald green with centered hero copy — matches user request "l'image occupe toute l'espace en fond de la couleur verte + diminuer l'opacité".
 - Single file changed: `src/components/home/hero-section.tsx`. No data/i18n changes needed (hero.alt i18n key still exists but img is decorative now; kept t() import for title/subtitle/cta).
+
+---
+Task ID: 9
+Agent: main (Z.ai Code)
+Task: Hero upgrade (user request) — chains must be VISIBLE in the backdrop; add 2 new pro campaign images (people wearing gold chains); turn the hero backdrop into a professional auto-playing slideshow.
+
+Work Log:
+- Generated 2 new campaign images (z-ai image, 864x1152, emerald studio background, luxury editorial style):
+  - `public/images/brand/hero-chain-2.png` — regenerated once after first version read as a "thin cord"; final version = close-up neck/shoulders, THICK chunky gold Cuban chain centered (VLM: USABLE, chain in lower third).
+  - `public/images/brand/hero-chain-3.png` — joyful model, layered gold Cuban chains over ivory blouse (VLM: USABLE).
+- Rewrote `src/components/home/hero-section.tsx`:
+  - `HERO_SLIDES` array of {src, position} — per-slide `object-position` tuned so each portrait image's neck/chain zone lands in the visible horizontal band: model=50% 68%, chain-2=50% 82%, chain-3=50% 50%.
+  - `BACKDROP_OPACITY = 0.65` (was 0.3/0.5 — chains now clearly readable through the emerald).
+  - `HeroBackdrop` component: AnimatePresence crossfade + slide-in from right + subtle scale-down (1.05→1), 1.2s cubic-bezier ease, respects `prefers-reduced-motion` (useReducedMotion → simple fade).
+  - `SlideDots` component: clickable indicator dots under the CTA — active = elongated gold pill (w-8), inactive = ivory/50 dots; aria-labels via new i18n keys `hero.slideshow` / `hero.slide` (added to i18n/fr.json + i18n/en.json).
+  - Autoplay 6s interval with state lifted to HeroSection (`[slide]` dep resets timer on manual dot click).
+  - Lighter emerald veil (from-emerald/25 → to-emerald/40) + soft radial scrim (rgba(10,20,17,0.32) ellipse at 50% 42%) behind the centered copy for guaranteed title legibility; stronger text drop-shadows.
+- Iterative VLM-driven crop tuning (5 verification rounds via agent-browser dot-click captures): fixed chain cut off by features card (A), chain out of frame (B), and white-teeth-behind-title contrast failure (C at 38%→50%).
+- INCIDENT + FIX: accidental `rm *.json` in project root deleted package.json/tsconfig.json/components.json → restored immediately via `git checkout --` (0 remaining deletions; lint + server 200 verified after restore).
+- Final verification (desktop 1440 + mobile 390, VLM): all 3 slides PASS (chains prominent, title readable), autoplay advances, dots track active slide, no console errors, dev.log clean.
+
+Stage Summary:
+- Hero is now a 3-image professional slideshow (hero-model + 2 new chain-focused campaign images), full-bleed over emerald at 65% opacity, crossfade+slide transitions, gold pill dot indicators (clickable), reduced-motion support.
+- Files changed: `src/components/home/hero-section.tsx`, `i18n/fr.json`, `i18n/en.json`; new assets `public/images/brand/hero-chain-2.png`, `hero-chain-3.png`.
+- Key learning: portrait 864x1152 images in a 1440x~685 hero show only ~36% vertical band → per-slide object-position is mandatory; white features card eats ~4% more at the bottom.

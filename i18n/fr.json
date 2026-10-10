@@ -102,24 +102,56 @@
     "title": "L'éclat qui vous ressemble, livré à Abidjan",
     "subtitle": "Faites le choix ORAYA",
     "cta": "Découvrir la boutique",
-    "alt": "Égérie ORAYA portant un collier doré et des bagues"
+    "alt": "Égérie ORAYA portant un collier doré et des bagues",
+    "slideshow": "Diaporama de la collection",
+    "slide": "Visuel"
   },
   "features": [
-    { "title": "Qualité premium", "text": "Des matières sélectionnées avec soin" },
-    { "title": "Clientes satisfaites", "text": "Plus de 2 000 clientes nous font confiance" },
-    { "title": "Service WhatsApp 7j/7", "text": "Une équipe à votre écoute" },
-    { "title": "Échange facile", "text": "Sous 7 jours, sans stress" },
-    { "title": "Livraison rapide", "text": "24–48h partout à Abidjan" }
+    {
+      "title": "Qualité premium",
+      "text": "Des matières sélectionnées avec soin"
+    },
+    {
+      "title": "Clientes satisfaites",
+      "text": "Plus de 2 000 clientes nous font confiance"
+    },
+    {
+      "title": "Service WhatsApp 7j/7",
+      "text": "Une équipe à votre écoute"
+    },
+    {
+      "title": "Échange facile",
+      "text": "Sous 7 jours, sans stress"
+    },
+    {
+      "title": "Livraison rapide",
+      "text": "24–48h partout à Abidjan"
+    }
   ],
   "ambassadors": {
     "eyebrow": "Nos ambassadrices",
     "title": "Elles portent ORAYA",
     "list": [
-      { "name": "Aïcha", "wears": "Boucles Aurore" },
-      { "name": "Mariam", "wears": "Collier Reine" },
-      { "name": "Akissi", "wears": "Pendentif Luna" },
-      { "name": "Grâce", "wears": "Colliers Étoile" },
-      { "name": "Saly", "wears": "Bracelet Nova" }
+      {
+        "name": "Aïcha",
+        "wears": "Boucles Aurore"
+      },
+      {
+        "name": "Mariam",
+        "wears": "Collier Reine"
+      },
+      {
+        "name": "Akissi",
+        "wears": "Pendentif Luna"
+      },
+      {
+        "name": "Grâce",
+        "wears": "Colliers Étoile"
+      },
+      {
+        "name": "Saly",
+        "wears": "Bracelet Nova"
+      }
     ]
   },
   "collection": {
@@ -151,10 +183,26 @@
     "title": "Blog",
     "readMore": "Découvrir",
     "cards": [
-      { "title": "Entretien de vos bijoux", "text": "Gardez l'éclat de vos pièces au quotidien", "slug": "entretien" },
-      { "title": "Notre écrin cadeau", "text": "Chaque bijou voyage dans son écrin signature", "slug": "a-propos" },
-      { "title": "Guide cadeaux", "text": "Trouver le bijou parfait à offrir", "slug": "guide-cadeaux" },
-      { "title": "Astuces style", "text": "Superposer, associer, oser", "slug": "astuces-style" }
+      {
+        "title": "Entretien de vos bijoux",
+        "text": "Gardez l'éclat de vos pièces au quotidien",
+        "slug": "entretien"
+      },
+      {
+        "title": "Notre écrin cadeau",
+        "text": "Chaque bijou voyage dans son écrin signature",
+        "slug": "a-propos"
+      },
+      {
+        "title": "Guide cadeaux",
+        "text": "Trouver le bijou parfait à offrir",
+        "slug": "guide-cadeaux"
+      },
+      {
+        "title": "Astuces style",
+        "text": "Superposer, associer, oser",
+        "slug": "astuces-style"
+      }
     ]
   },
   "customSection": {
@@ -163,9 +211,18 @@
     "text": "Pendentif prénom, photo souvenir ou bracelet gravé : offrez — ou offrez-vous — une pièce qui ne ressemble qu'à vous. Notre atelier réalise chaque commande à la main, avec soin.",
     "cta": "Demander un devis",
     "steps": [
-      { "title": "Choisissez", "text": "Le type de bijou à personnaliser" },
-      { "title": "Personnalisez", "text": "Prénom, photo ou message gravé" },
-      { "title": "Recevez", "text": "Livré dans son écrin ORAYA" }
+      {
+        "title": "Choisissez",
+        "text": "Le type de bijou à personnaliser"
+      },
+      {
+        "title": "Personnalisez",
+        "text": "Prénom, photo ou message gravé"
+      },
+      {
+        "title": "Recevez",
+        "text": "Livré dans son écrin ORAYA"
+      }
     ]
   },
   "visit": {
@@ -256,17 +313,39 @@
     "notFound": "Bijou introuvable.",
     "backToShop": "Retour à la boutique",
     "guarantees": [
-      { "title": "Livraison offerte", "text": "Dès 50 000 FCFA à Abidjan" },
-      { "title": "Échange 7 jours", "text": "Taille ou couleur à changer ? On s'en occupe" },
-      { "title": "Garantie ORAYA", "text": "Anti-ternissement 1 an" },
-      { "title": "Livraison 24–48h", "text": "Partout à Abidjan" }
+      {
+        "title": "Livraison offerte",
+        "text": "Dès 50 000 FCFA à Abidjan"
+      },
+      {
+        "title": "Échange 7 jours",
+        "text": "Taille ou couleur à changer ? On s'en occupe"
+      },
+      {
+        "title": "Garantie ORAYA",
+        "text": "Anti-ternissement 1 an"
+      },
+      {
+        "title": "Livraison 24–48h",
+        "text": "Partout à Abidjan"
+      }
     ],
     "featureIcons": [
-      { "title": "Qualité premium" },
-      { "title": "Garantie 1 an" },
-      { "title": "Échange facile" },
-      { "title": "Livraison rapide" },
-      { "title": "Emballage cadeau" }
+      {
+        "title": "Qualité premium"
+      },
+      {
+        "title": "Garantie 1 an"
+      },
+      {
+        "title": "Échange facile"
+      },
+      {
+        "title": "Livraison rapide"
+      },
+      {
+        "title": "Emballage cadeau"
+      }
     ],
     "customFields": {
       "name": "Prénom ou mot à graver",
@@ -368,9 +447,18 @@
       }
     },
     "steps": [
-      { "title": "Choisissez", "text": "Le bijou et sa finition, or ou argent" },
-      { "title": "Personnalisez", "text": "Prénom, photo ou message à graver" },
-      { "title": "Recevez", "text": "Livré en 48–72h dans son écrin ORAYA" }
+      {
+        "title": "Choisissez",
+        "text": "Le bijou et sa finition, or ou argent"
+      },
+      {
+        "title": "Personnalisez",
+        "text": "Prénom, photo ou message à graver"
+      },
+      {
+        "title": "Recevez",
+        "text": "Livré en 48–72h dans son écrin ORAYA"
+      }
     ]
   },
   "info": {

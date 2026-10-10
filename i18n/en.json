@@ -102,24 +102,56 @@
     "title": "Shine your way, delivered in Abidjan",
     "subtitle": "Make the ORAYA choice",
     "cta": "Discover the shop",
-    "alt": "ORAYA muse wearing a gold necklace and rings"
+    "alt": "ORAYA muse wearing a gold necklace and rings",
+    "slideshow": "Collection slideshow",
+    "slide": "Visual"
   },
   "features": [
-    { "title": "Premium quality", "text": "Materials selected with care" },
-    { "title": "Happy customers", "text": "Over 2,000 customers trust us" },
-    { "title": "WhatsApp support 7/7", "text": "A team at your service" },
-    { "title": "Easy exchange", "text": "Within 7 days, stress-free" },
-    { "title": "Fast delivery", "text": "24–48h across Abidjan" }
+    {
+      "title": "Premium quality",
+      "text": "Materials selected with care"
+    },
+    {
+      "title": "Happy customers",
+      "text": "Over 2,000 customers trust us"
+    },
+    {
+      "title": "WhatsApp support 7/7",
+      "text": "A team at your service"
+    },
+    {
+      "title": "Easy exchange",
+      "text": "Within 7 days, stress-free"
+    },
+    {
+      "title": "Fast delivery",
+      "text": "24–48h across Abidjan"
+    }
   ],
   "ambassadors": {
     "eyebrow": "Our ambassadors",
     "title": "They wear ORAYA",
     "list": [
-      { "name": "Aïcha", "wears": "Aurore earrings" },
-      { "name": "Mariam", "wears": "Reine necklace" },
-      { "name": "Akissi", "wears": "Luna pendant" },
-      { "name": "Grâce", "wears": "Étoile necklaces" },
-      { "name": "Saly", "wears": "Nova bracelet" }
+      {
+        "name": "Aïcha",
+        "wears": "Aurore earrings"
+      },
+      {
+        "name": "Mariam",
+        "wears": "Reine necklace"
+      },
+      {
+        "name": "Akissi",
+        "wears": "Luna pendant"
+      },
+      {
+        "name": "Grâce",
+        "wears": "Étoile necklaces"
+      },
+      {
+        "name": "Saly",
+        "wears": "Nova bracelet"
+      }
     ]
   },
   "collection": {
@@ -151,10 +183,26 @@
     "title": "Blog",
     "readMore": "Discover",
     "cards": [
-      { "title": "Caring for your jewelry", "text": "Keep your pieces shining every day", "slug": "entretien" },
-      { "title": "Our gift box", "text": "Every jewel travels in its signature case", "slug": "a-propos" },
-      { "title": "Gift guide", "text": "Find the perfect piece to give", "slug": "guide-cadeaux" },
-      { "title": "Style tips", "text": "Layer, mix, dare", "slug": "astuces-style" }
+      {
+        "title": "Caring for your jewelry",
+        "text": "Keep your pieces shining every day",
+        "slug": "entretien"
+      },
+      {
+        "title": "Our gift box",
+        "text": "Every jewel travels in its signature case",
+        "slug": "a-propos"
+      },
+      {
+        "title": "Gift guide",
+        "text": "Find the perfect piece to give",
+        "slug": "guide-cadeaux"
+      },
+      {
+        "title": "Style tips",
+        "text": "Layer, mix, dare",
+        "slug": "astuces-style"
+      }
     ]
   },
   "customSection": {
@@ -163,9 +211,18 @@
     "text": "Name pendant, keepsake photo or engraved bracelet: give — or treat yourself to — a piece like no other. Our workshop handcrafts every order with care.",
     "cta": "Request a quote",
     "steps": [
-      { "title": "Choose", "text": "The type of jewel to customize" },
-      { "title": "Personalize", "text": "Name, photo or engraved message" },
-      { "title": "Receive", "text": "Delivered in its ORAYA case" }
+      {
+        "title": "Choose",
+        "text": "The type of jewel to customize"
+      },
+      {
+        "title": "Personalize",
+        "text": "Name, photo or engraved message"
+      },
+      {
+        "title": "Receive",
+        "text": "Delivered in its ORAYA case"
+      }
     ]
   },
   "visit": {
@@ -256,17 +313,39 @@
     "notFound": "Jewel not found.",
     "backToShop": "Back to shop",
     "guarantees": [
-      { "title": "Free delivery", "text": "From 50,000 FCFA in Abidjan" },
-      { "title": "7-day exchange", "text": "Wrong size or color? We've got you" },
-      { "title": "ORAYA warranty", "text": "1-year anti-tarnish" },
-      { "title": "24–48h delivery", "text": "Everywhere in Abidjan" }
+      {
+        "title": "Free delivery",
+        "text": "From 50,000 FCFA in Abidjan"
+      },
+      {
+        "title": "7-day exchange",
+        "text": "Wrong size or color? We've got you"
+      },
+      {
+        "title": "ORAYA warranty",
+        "text": "1-year anti-tarnish"
+      },
+      {
+        "title": "24–48h delivery",
+        "text": "Everywhere in Abidjan"
+      }
     ],
     "featureIcons": [
-      { "title": "Premium quality" },
-      { "title": "1-year warranty" },
-      { "title": "Easy exchange" },
-      { "title": "Fast delivery" },
-      { "title": "Gift packaging" }
+      {
+        "title": "Premium quality"
+      },
+      {
+        "title": "1-year warranty"
+      },
+      {
+        "title": "Easy exchange"
+      },
+      {
+        "title": "Fast delivery"
+      },
+      {
+        "title": "Gift packaging"
+      }
     ],
     "customFields": {
       "name": "Name or word to engrave",
@@ -368,9 +447,18 @@
       }
     },
     "steps": [
-      { "title": "Choose", "text": "The jewel and its finish, gold or silver" },
-      { "title": "Personalize", "text": "Name, photo or message to engrave" },
-      { "title": "Receive", "text": "Delivered in 48–72h in its ORAYA case" }
+      {
+        "title": "Choose",
+        "text": "The jewel and its finish, gold or silver"
+      },
+      {
+        "title": "Personalize",
+        "text": "Name, photo or message to engrave"
+      },
+      {
+        "title": "Receive",
+        "text": "Delivered in 48–72h in its ORAYA case"
+      }
     ]
   },
   "info": {
