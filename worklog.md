@@ -196,3 +196,22 @@ Stage Summary:
 - SITE COMPLETE AND BROWSER-VERIFIED. All flows work end-to-end: browse → filter → product → variant/custom options → cart → checkout → order → WhatsApp.
 - Known TODOs for the brand: confirm WhatsApp number (+225 XX XX XX XX XX placeholder in site-config.ts), email, socials, showroom address/hours (all in i18n footer keys + site-config), production domain in layout.tsx metadataBase, and replace placeholder product photos with real ORAYA photography.
 - Verify at the Preview Panel (route / only — all pages are hash views: #/boutique, #/produit/:slug, #/personnaliser, #/panier, #/commande, #/infos/:slug, #/contact).
+
+---
+Task ID: 8
+Agent: main (Z.ai Code)
+Task: Hero update (user request) — make the campaign image cover the ENTIRE hero section as a background behind the emerald color, with reduced opacity.
+
+Work Log:
+- Rewrote `src/components/home/hero-section.tsx` HeroSection:
+  - Removed the right-column rounded image card; the muse photo now sits in an `absolute inset-0` layer (full-bleed, `object-cover object-top`) behind the content.
+  - Image fades in via Framer Motion to **opacity 0.3** (low opacity over the emerald `#215E52` base so the green stays dominant).
+  - Added a soft emerald gradient veil (`from-emerald/40 via-transparent to-emerald/60`) top & bottom for readability.
+  - Text block (gold eyebrow, H1, serif subtitle, gold CTA) now centered (`max-w-3xl`, `text-center`), with subtle drop-shadows; hero keeps ~620px min-height on lg, ~460px mobile.
+  - Gold sparkle decorations kept (repositioned right one), z-index raised above the backdrop; white FeaturesCard overlap at hero bottom unchanged.
+- Fixed Framer Motion pitfall: animating `opacity: 1` inline would override Tailwind `opacity-30` → animate directly to `0.3`.
+- Verified: `bun run lint` clean; agent-browser desktop (1440×900) + mobile (390×844) VLM checks confirm full-width faded background image, centered readable text, features card overlap intact; no console/runtime errors in dev.log.
+
+Stage Summary:
+- Hero is now a full-bleed image backdrop at 30% opacity over emerald green with centered hero copy — matches user request "l'image occupe toute l'espace en fond de la couleur verte + diminuer l'opacité".
+- Single file changed: `src/components/home/hero-section.tsx`. No data/i18n changes needed (hero.alt i18n key still exists but img is decorative now; kept t() import for title/subtitle/cta).
