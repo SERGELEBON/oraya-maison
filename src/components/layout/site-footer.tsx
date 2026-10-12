@@ -12,7 +12,14 @@ import { Facebook, Instagram } from "lucide-react";
 import { TikTokIcon, WhatsAppIcon } from "@/components/shared/social-icons";
 import { StarSpark } from "@/components/shared/logo";
 
-const PAYMENT_LABELS = ["WAVE", "ORANGE MONEY", "MTN MoMo", "MOOV MONEY", "VISA", "Mastercard"];
+const PAYMENT_METHODS: { name: string; src?: string; bg?: string }[] = [
+  { name: "Wave", src: "/images/payments/wave.png" },
+  { name: "Orange Money", bg: "#FF7900" },
+  { name: "MTN MoMo", src: "/images/payments/mtn-momo.png" },
+  { name: "Moov Money", src: "/images/payments/moov-money.png" },
+  { name: "Visa", src: "/images/payments/visa.png" },
+  { name: "Mastercard", src: "/images/payments/mastercard.png" },
+];
 
 function FooterLink({ to, label }: { to: string; label: string }) {
   const navigate = useNavigate();
@@ -156,18 +163,35 @@ export function SiteFooter() {
 
       {/* Payment logos band */}
       <div className="border-t border-ivory/10 bg-white">
-        <div className="container-x flex flex-wrap items-center justify-center gap-x-5 gap-y-2 py-4">
-          <span className="label-caps mr-1 text-[11px] font-semibold text-body/70">
+        <div className="container-x flex flex-col items-center justify-center gap-3 py-5 md:flex-row md:gap-6">
+          <span className="label-caps text-[11px] font-semibold tracking-[0.18em] text-body/70">
             {t("footer.payments")}
           </span>
-          {PAYMENT_LABELS.map((label) => (
-            <span
-              key={label}
-              className="rounded-[3px] border border-hairline px-2.5 py-1 text-[11px] font-bold tracking-wide text-ink/80"
-            >
-              {label}
-            </span>
-          ))}
+          <ul className="flex flex-wrap items-center justify-center gap-2.5" aria-label={t("footer.payments")}>
+            {PAYMENT_METHODS.map((m) => (
+              <li
+                key={m.name}
+                title={m.name}
+                className="flex h-9 w-[58px] items-center justify-center overflow-hidden rounded-[5px] shadow-[0_1px_3px_rgba(0,0,0,0.12)] ring-1 ring-black/5 transition-transform duration-200 hover:-translate-y-0.5 md:h-10 md:w-16"
+                style={m.bg ? { backgroundColor: m.bg } : undefined}
+              >
+                {m.src ? (
+                  <img
+                    src={m.src}
+                    alt={m.name}
+                    width={64}
+                    height={40}
+                    loading="lazy"
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <span className="px-1 text-center text-[9px] font-extrabold leading-[1.05] tracking-tight text-white md:text-[10px]">
+                    {m.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
